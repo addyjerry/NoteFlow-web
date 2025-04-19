@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@import "tailwindcss/preflight";
+
+body {
+  background: linear-gradient(180deg, #061212 0%, #0e2e2e 100%);
+  color: rgba(236, 252, 253, 1);
+  font-family: Poppins;
+  padding: 4rem 5rem;
+}
