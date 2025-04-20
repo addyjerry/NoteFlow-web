@@ -1,5 +1,6 @@
 import React from "react";
 import MyButton from "./MyButton";
+import { MoveRight } from "lucide-react";
 import Notes from "../assets/images/Summarizer.webp";
 import avatar1 from "../assets/images/avatar4.webp";
 import avatar2 from "../assets/images/avatar3.webp";
@@ -10,7 +11,7 @@ import avatar5 from "../assets/images/avatar5.webp";
 const HeroSection = () => {
   const pictures = [avatar1, avatar2, avatar3, avatar4, avatar5];
   return (
-    <section className="py-10">
+    <section className="py-5 ">
       <div className="flex gap-0 text-left ">
         <div className=" py-40">
           <h1 className="font-bold text-5xl/15 w-xl py-1">
@@ -20,8 +21,8 @@ const HeroSection = () => {
             Let AI organize & summarize your notes, saving you time and boosting
             productivity
           </p>
-          <MyButton className="bg-[#44e5e7]/100 text-black border-none">
-            Get Started
+          <MyButton className="bg-[#44e5e7]/100 text-black border-none flex gap-1 shadow shadow-[#44e5e7]">
+            Get Started <MoveRight />
           </MyButton>
         </div>
 
@@ -31,7 +32,7 @@ const HeroSection = () => {
           className="w-400 h-200 mt-[-3.4rem] ml-[-8.2rem]"
         />
       </div>
-      <div className="flex ">
+      <div className="flex ml-3">
         {pictures.map((picture) => (
           <img src={picture} alt="avatar" className="w-10 ml-[-0.9rem]" />
         ))}
