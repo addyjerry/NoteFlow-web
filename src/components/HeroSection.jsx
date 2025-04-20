@@ -10,7 +10,7 @@ import avatar5 from "../assets/images/avatar5.webp";
 const HeroSection = () => {
   const pictures = [avatar1, avatar2, avatar3, avatar4, avatar5];
   return (
-    <section>
+    <section className="py-10">
       <div className="flex gap-0 text-left ">
         <div className=" py-40">
           <h1 className="font-bold text-5xl/15 w-xl py-1">
