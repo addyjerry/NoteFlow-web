@@ -25,8 +25,13 @@ const Organizations = () => {
         Organizations powered by <b>NoteFlow</b>
       </p>
       <div className="grid grid-cols-4 gap-20 gap-x-50">
-        {organizations.map((organization) => (
-          <img src={organization} alt="organization" className=" h-8 " />
+        {organizations.map((organization, index) => (
+          <img
+            src={organization}
+            alt="organization"
+            className=" h-8 "
+            key={index}
+          />
         ))}
       </div>
     </section>

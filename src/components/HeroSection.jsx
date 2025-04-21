@@ -33,8 +33,13 @@ const HeroSection = () => {
         />
       </div>
       <div className="flex ml-3">
-        {pictures.map((picture) => (
-          <img src={picture} alt="avatar" className="w-10 ml-[-0.9rem]" />
+        {pictures.map((picture, index) => (
+          <img
+            src={picture}
+            alt="avatar"
+            className="w-10 ml-[-0.9rem]"
+            key={index}
+          />
         ))}
         <p className="px-10 py-2">
           Trusted by <b className="text-[#44e5e7]/100">12,653+</b> productivity

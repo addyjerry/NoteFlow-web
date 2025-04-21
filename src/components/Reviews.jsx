@@ -1,10 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import MyButton from "./MyButton";
 import { reviews } from "./Questions/reviews";
 import { rev } from "./Questions/reviews";
 import { rev3 } from "./Questions/reviews";
 
 const Reviews = () => {
+  const [showMore, setShowMore] = useState(false);
+  const [rev3length, setrev3Length] = useState(3);
+  const [revlength, setrevLength] = useState(3);
+  const [reviewslength, setreviewsLength] = useState(3);
+
+  const handleShowMore = () => {
+    setShowMore(!showMore);
+    if (!showMore) {
+      setrev3Length(rev3.length);
+      setrevLength(rev.length);
+      setreviewsLength(reviews.length);
+    } else {
+      setrev3Length(3);
+      setrevLength(3);
+      setreviewsLength(3);
+    }
+  };
   return (
     <section className="place-items-center py-20 ">
       <MyButton className="bg-[#44e5e7]/100 text-black border-none shadow-lg shadow-[#44e5e7]">
@@ -19,7 +36,7 @@ const Reviews = () => {
       </p>
       <div className="flex p-5">
         <div className="block ">
-          {reviews.map((review) => (
+          {reviews.slice(0, reviewslength).map((review) => (
             <div
               key={review.id}
               className="block border rounded-xl p-5 shadow my-5 shadow-black text-lg font-300 w-84  "
@@ -37,7 +54,7 @@ const Reviews = () => {
           ))}
         </div>
         <div className="block ">
-          {rev.map((review) => (
+          {rev3.slice(0, rev3length).map((review) => (
             <div
               key={review.id}
               className="block border rounded-xl p-5 m-5 shadow shadow-black text-lg font-300 w-84 "
@@ -54,8 +71,8 @@ const Reviews = () => {
             </div>
           ))}
         </div>
-        <div className="block p-4 ">
-          {rev3.map((review) => (
+        <div className="block ">
+          {rev.slice(0, revlength).map((review) => (
             <div
               key={review.id}
               className="block border rounded-xl p-5 my-5 shadow shadow-black text-lg font-300 w-84  "
@@ -73,6 +90,10 @@ const Reviews = () => {
           ))}
         </div>
       </div>
+
+      <MyButton onClick={() => handleShowMore()}>
+        {showMore ? "Show Less" : " Show More"}
+      </MyButton>
     </section>
   );
 };
