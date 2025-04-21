@@ -1,0 +1,80 @@
+import React from "react";
+import MyButton from "./MyButton";
+import { reviews } from "./Questions/reviews";
+import { rev } from "./Questions/reviews";
+import { rev3 } from "./Questions/reviews";
+
+const Reviews = () => {
+  return (
+    <section className="place-items-center py-20 ">
+      <MyButton className="bg-[#44e5e7]/100 text-black border-none shadow-lg shadow-[#44e5e7]">
+        Testimonials
+      </MyButton>
+      <p className="font-medium text-5xl/15 w-3xl pt-8 text-center place-self-center ">
+        What Our AI-powered notetakers have to say
+      </p>
+      <p className="text-lg/10 text-[rgba(199,247,248,1)] font-200 px-74 py-6 text-center place-self-center">
+        NoteFlow has helped 1000's supercharge their productivity with cutting
+        edge AI note taking tools
+      </p>
+      <div className="flex p-5">
+        <div className="block ">
+          {reviews.map((review) => (
+            <div
+              key={review.id}
+              className="block border rounded-xl p-5 shadow my-5 shadow-black text-lg font-300 w-84  "
+            >
+              <img src={review.rating} alt="rating" className="py-5 w-sm" />
+              <p className="text-[rgba(236, 252, 253, 1)] p-3">{review.text}</p>
+              <div className="flex gap-3 py-5">
+                <img src={review.avatar} alt="avatar" className="size-10 " />
+                <div>
+                  <h3 className="text-xl font-700 p-1">{review.name}</h3>
+                  <p>{review.position}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="block ">
+          {rev.map((review) => (
+            <div
+              key={review.id}
+              className="block border rounded-xl p-5 m-5 shadow shadow-black text-lg font-300 w-84 "
+            >
+              <img src={review.rating} alt="rating" className="py-5 w-sm" />
+              <p className="text-[rgba(236, 252, 253, 1)] p-3">{review.text}</p>
+              <div className="flex gap-3 py-5">
+                <img src={review.avatar} alt="avatar" className="size-10 " />
+                <div>
+                  <h3 className="text-xl font-700 p-1">{review.name}</h3>
+                  <p>{review.position}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="block p-4 ">
+          {rev3.map((review) => (
+            <div
+              key={review.id}
+              className="block border rounded-xl p-5 my-5 shadow shadow-black text-lg font-300 w-84  "
+            >
+              <img src={review.rating} alt="rating" className="py-5 w-sm" />
+              <p className="text-[rgba(236, 252, 253, 1)] p-3">{review.text}</p>
+              <div className="flex gap-3 py-5">
+                <img src={review.avatar} alt="avatar" className="size-10 " />
+                <div>
+                  <h3 className="text-xl font-700 p-1">{review.name}</h3>
+                  <p>{review.position}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Reviews;

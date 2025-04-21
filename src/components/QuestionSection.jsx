@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import MyButton from "./MyButton";
-import { questions } from "./Questions/data";
+import { questions } from "./Questions/questions";
 import { ChevronUp } from "lucide-react";
 import { ChevronDown } from "lucide-react";
 
@@ -31,7 +31,7 @@ const QuestionSection = () => {
         <div className="place-self-center p-20">
           {questions.map((question) => (
             <div key={question.id} className="block">
-              <div className="flex flex-row gap-47 max-w-5xl ">
+              <div className="flex flex-row gap-47 min-w-xl ">
                 <div className="inline-flex font-medium text-xl">
                   <img src={question.pic} alt="icon" className="size-12" />
                   <p className="p-3 ">{question.question}</p>
