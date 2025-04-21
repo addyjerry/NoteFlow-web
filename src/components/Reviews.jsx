@@ -39,7 +39,7 @@ const Reviews = () => {
           {reviews.slice(0, reviewslength).map((review) => (
             <div
               key={review.id}
-              className="block border rounded-xl p-5 shadow my-5 shadow-black text-lg font-300 w-84  "
+              className="block  rounded-xl p-5 shadow my-5 shadow-black text-lg font-300 w-84 bg-[#0e2e2e] "
             >
               <img src={review.rating} alt="rating" className="py-5 w-sm" />
               <p className="text-[rgba(236, 252, 253, 1)] p-3">{review.text}</p>
@@ -57,7 +57,7 @@ const Reviews = () => {
           {rev3.slice(0, rev3length).map((review) => (
             <div
               key={review.id}
-              className="block border rounded-xl p-5 m-5 shadow shadow-black text-lg font-300 w-84 "
+              className="block  rounded-xl p-5 m-5 shadow shadow-black text-lg font-300 w-84 bg-[#0e2e2e]"
             >
               <img src={review.rating} alt="rating" className="py-5 w-sm" />
               <p className="text-[rgba(236, 252, 253, 1)] p-3">{review.text}</p>
@@ -75,7 +75,8 @@ const Reviews = () => {
           {rev.slice(0, revlength).map((review) => (
             <div
               key={review.id}
-              className="block border rounded-xl p-5 my-5 shadow shadow-black text-lg font-300 w-84  "
+              className="block  rounded-xl p-5 my-5 shadow shadow-black text-lg font-300 w-84 bg-[#0e2e2e];
+] "
             >
               <img src={review.rating} alt="rating" className="py-5 w-sm" />
               <p className="text-[rgba(236, 252, 253, 1)] p-3">{review.text}</p>

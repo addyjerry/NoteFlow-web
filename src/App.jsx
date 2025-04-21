@@ -5,6 +5,7 @@ import Organizations from "./components/Organizations";
 import ToolSection from "./components/ToolSection";
 import QuestionSection from "./components/QuestionSection";
 import Reviews from "./components/Reviews";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <ToolSection />
       <QuestionSection />
       <Reviews />
+      <Footer />
     </div>
   );
 }
