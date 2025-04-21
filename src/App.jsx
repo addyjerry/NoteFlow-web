@@ -4,6 +4,7 @@ import HeroSection from "./components/HeroSection";
 import Organizations from "./components/Organizations";
 import ToolSection from "./components/ToolSection";
 import QuestionSection from "./components/QuestionSection";
+import Reviews from "./components/Reviews";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Organizations />
       <ToolSection />
       <QuestionSection />
+      <Reviews />
     </div>
   );
 }
