@@ -30,7 +30,7 @@ const QuestionSection = () => {
         </div>
         <div className="place-self-center p-20">
           {questions.map((question) => (
-            <div key={question.id} className="block">
+            <div key={question.id} className="block p-5">
               <div className="flex flex-row gap-47 min-w-xl ">
                 <div className="inline-flex font-medium text-xl">
                   <img src={question.pic} alt="icon" className="size-12" />
