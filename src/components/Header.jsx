@@ -5,7 +5,7 @@ import MyButton from "./MyButton";
 
 const Header = () => {
   return (
-    <section className="flex gap-44 py-1 items-center-safe ">
+    <section className="flex gap-45 py-1 items-center-safe ">
       <span className="flex font-bold text-xl gap-3">
         <img src={Logo} alt="NoteFlow Logo" className="size-[28px]" />
         <p>NoteFlow</p>

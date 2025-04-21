@@ -12,7 +12,7 @@ const ToolSection = () => {
         </b>{" "}
         Your Note taking
       </p>
-      <div className="flex pt-40 gap-20 ">
+      <div className="flex pt-40 gap-34 ">
         <>
           <img
             src={Notestool}
@@ -30,7 +30,7 @@ const ToolSection = () => {
           </p>
         </div>
       </div>
-      <div className="flex gap-20">
+      <div className="flex gap-27">
         <div className="py-55">
           <h2 className="font-medium text-4xl  py-1">Contextual Reminders</h2>
           <p className="text-lg/10 text-[rgba(199,247,248,1)] font-300 w-md py-7">
