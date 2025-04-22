@@ -22,7 +22,7 @@ const Organizations = () => {
   return (
     <section className="py-20 lg:text-center text-left place-self-center ml-[-48rem] lg:ml-0 ">
       <p className="lg:p-15 md:py-10 md:ml-[-25rem] lg:ml-4 md:text-center lg:text-center">
-        Organizations powered by <b>NoteFlow</b>
+        Organization powered by <b>NoteFlow</b>
       </p>
       <div className="grid lg:grid-cols-4  md:grid-cols-4 grid-cols-2 gap-10  md:gap-16  lg:gap-x-40 lg:ml-0 ml-[0rem] md:ml-[-20rem] ">
         {organizations.map((organization, index) => (
