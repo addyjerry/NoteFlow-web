@@ -5,7 +5,7 @@ import microsoft from "../assets/images/Microsoft.webp";
 import vice from "../assets/images/Vice.webp";
 import walmart from "../assets/images/Walmart.webp";
 import chase from "../assets/images/Chase.webp";
-import visa from "../assets/images/Visa.webp";
+import visa from "../assets/images/Visa.png";
 import amazon from "../assets/images/Amazon.webp";
 
 const Organizations = () => {
