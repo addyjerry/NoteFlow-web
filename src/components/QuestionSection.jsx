@@ -26,7 +26,7 @@ const QuestionSection = () => {
           </MyButton>
           <MyButton>Pricing</MyButton>
           <MyButton>Features</MyButton>
-          <MyButton>Integrations</MyButton>
+          <MyButton>Integration</MyButton>
         </div>
         <div className="place-self-center p-20 ml-[-26rem]  md:ml-110 w-xl md:w-full">
           {questions.map((question) => (
