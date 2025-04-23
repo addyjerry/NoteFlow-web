@@ -11,16 +11,16 @@ const QuestionSection = () => {
   };
 
   return (
-    <section className="place-self-center ml-[-17rem] md:ml-[-8rem]">
+    <section className="place-self-center md:place-self-start ">
       <div>
-        <p className="font-bold md:text-5xl/15 text-4xl md:w-4xl w-xl px-10 pt-8 md:text-center place-self-center ml-[-20rem] md:ml-10">
+        <p className="font-bold lg:text-5xl/15 text-4xl lg:w-4xl w-xl px-10 pt-8 md:text-center place-self-center md:place-self-start lg:place-self-center">
           Frequently Asked Questions
         </p>
-        <p className="text-lg/10 text-[rgba(199,247,248,1)] font-200 md:px-100 px-30 py-6 md:text-center text-left w-xl md:w-full ml-[-25rem] md:ml-0">
+        <p className="text-lg/10 text-[rgba(199,247,248,1)] font-200 lg:px-100 px-30 py-6 md:text-center text-left w-xl lg:w-full md:place-self-start ">
           The most commonly asked questions about NoteFlow. Have any other
           questions? <u>Chat with our expert tech team</u>
         </p>
-        <div className="md:flex md:gap-3 gap-7 md:place-self-center place-self-start grid grid-cols-2 ml-[-18rem] md:ml-0 ">
+        <div className="lg:flex md:grid md:gap-3 gap-7 lg:place-self-center place-self-start grid grid-cols-2 md:pl-40 lg:pl-0">
           <MyButton className="bg-[#44e5e7]/100 text-black border-none shadow-lg shadow-[#44e5e7]">
             General
           </MyButton>
@@ -28,7 +28,7 @@ const QuestionSection = () => {
           <MyButton>Features</MyButton>
           <MyButton>Integrations</MyButton>
         </div>
-        <div className="place-self-start p-20 ml-[-23rem]  md:ml-70 w-xl md:w-full">
+        <div className="place-self-center xl:ml-50 py-20 px-56  md:w-full md:place-self-start lg:place-self-center md:px-5 lg:px-56">
           {questions.map((question) => (
             <div key={question.id} className="block md:p-5 p-2 md:w-full">
               <div className="flex flex-row md:gap-7 gap-5 ">
@@ -38,7 +38,9 @@ const QuestionSection = () => {
                     alt="icon"
                     className="size-8 md:size-12"
                   />
-                  <p className="md:p-3 w-3xs md:w-xl">{question.question}</p>
+                  <p className="md:p-3 w-3xs lg:w-xl md:w-lg">
+                    {question.question}
+                  </p>
                 </div>
                 <>
                   {question.id === answer ? (

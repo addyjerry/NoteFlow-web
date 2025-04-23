@@ -11,10 +11,10 @@ import avatar5 from "../assets/images/avatar5.webp";
 const HeroSection = () => {
   const pictures = [avatar1, avatar2, avatar3, avatar4, avatar5];
   return (
-    <section className="lg:py-5 py-0 lg:place-self-center max-w-300 md:ml-0 ml-[-34rem]">
-      <div className="lg:flex md:gap-20 lg:text-left block md:flex lg:gap-20 ">
-        <div className=" py-40 w-xs lg:w-7xl px-2 lg:px-1">
-          <h1 className="lg:font-bold font-medium lg:text-5xl/15 text-2xl lg:w-xl  py-1">
+    <section className="lg:py-5 py-0 lg:place-self-center px-5 lg:ml-19 ">
+      <div className=" lg:text-left block md:flex md:gap-23  ">
+        <div className=" py-40 md:w-xs lg:w-xl ">
+          <h1 className="font-medium lg:text-5xl/15 text-2xl lg:w-xl  py-1">
             AI-Powered Notes. Organize and Summarize in Seconds
           </h1>
           <p className="lg:text-lg/10 text-sm text-[rgba(199,247,248,1)] lg:w-sm font-300  py-7">
@@ -25,12 +25,13 @@ const HeroSection = () => {
             Get Started <MoveRight className="hidden lg:flex" />
           </MyButton>
         </div>
-
-        <img
-          src={Notes}
-          alt="Notes image"
-          className="lg:w-400 size-120 lg:h-200  lg:mt-[-3.4rem] md:mt-10 mt-[-12.4rem] lg:ml-[-8.2rem] ml-[-6.9rem]"
-        />
+        <>
+          <img
+            src={Notes}
+            alt="Notes image"
+            className="lg:w-250 size-120 lg:h-200 ml-[-10rem] xl:ml-[-8rem] mt-[-3rem] xl:w-180 md:mt-7 lg:mt-[-3rem]"
+          />
+        </>
       </div>
       <div className="lg:flex md:flex block">
         <div className="flex ml-5">
@@ -38,7 +39,7 @@ const HeroSection = () => {
             <img
               src={picture}
               alt="avatar"
-              className="w-10 ml-[-0.9rem] md:h-10"
+              className="w-10 ml-[-1rem] md:h-10"
               key={index}
             />
           ))}

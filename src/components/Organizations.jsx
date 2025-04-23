@@ -20,16 +20,16 @@ const Organizations = () => {
     amazon,
   ];
   return (
-    <section className="py-20 lg:text-center text-left place-self-center ml-[-48rem] lg:ml-0 ">
-      <p className="lg:p-15 md:py-10 md:ml-[-25rem] lg:ml-4 md:text-center lg:text-center">
+    <section className="py-20 lg:text-center text-left place-self-center  lg:ml-15 md:ml-[-10rem] ">
+      <p className="lg:p-15 md:py-10 md:ml-[-12rem] lg:ml-4 lg:text-center">
         Organizations powered by <b>NoteFlow</b>
       </p>
-      <div className="grid lg:grid-cols-4  md:grid-cols-4 grid-cols-2 gap-10  md:gap-16  lg:gap-x-40 lg:ml-0 ml-[0rem] md:ml-[-20rem] ">
+      <div className="grid lg:grid-cols-4   grid-cols-2 md:gap-5  md:ml-[-15rem] lg:ml-0 lg:gap-25">
         {organizations.map((organization, index) => (
           <img
             src={organization}
             alt="organization"
-            className="lg:h-8 h-6 "
+            className="lg:h-8 h-6 px-10"
             key={index}
           />
         ))}
