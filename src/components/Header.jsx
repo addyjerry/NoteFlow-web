@@ -7,7 +7,7 @@ import { SquareX, LayoutGrid } from "lucide-react";
 const Header = () => {
   const [loginMenu, setLoginMenu] = useState(false);
   return (
-    <section className="flex lg:gap-51 py-1 lg:place-self-center gap-20 md:gap-70 ml-[-68rem]">
+    <section className="flex lg:gap-51 py-1 lg:place-self-center gap-20 md:gap-70 ml-[-33rem] md:ml-0">
       <span className="flex lg:font-bold text-xl gap-3">
         <img src={Logo} alt="NoteFlow Logo" className="size-[28px]" />
         <p>NoteFlow</p>

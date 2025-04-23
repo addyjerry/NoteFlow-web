@@ -11,7 +11,7 @@ import avatar5 from "../assets/images/avatar5.webp";
 const HeroSection = () => {
   const pictures = [avatar1, avatar2, avatar3, avatar4, avatar5];
   return (
-    <section className="lg:py-5 py-0 lg:place-self-center max-w-300">
+    <section className="lg:py-5 py-0 lg:place-self-center max-w-300 md:ml-0 ml-[-34rem]">
       <div className="lg:flex md:gap-20 lg:text-left block md:flex lg:gap-20 ">
         <div className=" py-40 w-xs lg:w-7xl px-2 lg:px-1">
           <h1 className="lg:font-bold font-medium lg:text-5xl/15 text-2xl lg:w-xl  py-1">
