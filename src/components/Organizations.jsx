@@ -21,7 +21,7 @@ const Organizations = () => {
   ];
   return (
     <section className="py-20 lg:text-center text-left place-self-center  lg:ml-15 md:ml-[-10rem] ">
-      <p className="lg:p-15 md:py-10 md:ml-[-12rem] lg:ml-4 lg:text-center px-10">
+      <p className="lg:p-15 md:py-10 md:ml-[-12rem] lg:ml-4 text-center px-10">
         Organizations powered by <b>NoteFlow</b>
       </p>
       <div className="grid lg:grid-cols-4   grid-cols-2 md:gap-5  md:ml-[-15rem] lg:ml-0 lg:gap-25">
