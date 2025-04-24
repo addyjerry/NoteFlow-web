@@ -79,12 +79,22 @@ const Reviews = () => {
           {rev.slice(0, revlength).map((review) => (
             <div
               key={review.id}
-              className="md:block hidden  rounded-xl p-5 my-5 shadow shadow-black text-lg font-300 w-84 bg-[#0e2e2e] "
+              className="md:block hidden  rounded-xl md:p-5 my-5 shadow shadow-black text-lg font-300 md:w-84  p-0 bg-[#0e2e2e] "
             >
-              <img src={review.rating} alt="rating" className="py-5 w-sm" />
-              <p className="text-[rgba(236, 252, 253, 1)] p-3">{review.text}</p>
+              <img
+                src={review.rating}
+                alt="rating"
+                className="py-5 md:w-sm w-2xs"
+              />
+              <p className="text-[rgba(236, 252, 253, 1)] md:p-3 text-3xs md:text-lg">
+                {review.text}
+              </p>
               <div className="flex gap-3 py-5">
-                <img src={review.avatar} alt="avatar" className="size-10 " />
+                <img
+                  src={review.avatar}
+                  alt="avatar"
+                  className="md:size-10 size-5"
+                />
                 <div>
                   <h3 className="text-xl font-700 p-1 text-[#44e5e7]/100">
                     {review.name}

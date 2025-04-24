@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="place-self-center lg:px-18 py-12 ml-190 lg:ml-0 md:ml-60">
+    <div className=" md:place-self-center lg:px-18 py-12 ml-0 lg:ml-0 md:ml-60">
       <Header />
       <HeroSection />
       <Organizations />

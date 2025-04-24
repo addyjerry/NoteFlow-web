@@ -11,7 +11,7 @@ const Footer = () => {
         </span>
         <div className="lg:flex gap-12 grid grid-cols-2">
           <div className="block">
-            <p className="font-bold text-xl p-2">Home</p>
+            <p className="font-bold text-xl  p-2">Home</p>
             <ul className="p-2">
               <li className="py-3">FAQ</li>
               <li className="py-3">Features</li>
