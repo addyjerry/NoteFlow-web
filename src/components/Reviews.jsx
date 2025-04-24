@@ -23,18 +23,18 @@ const Reviews = () => {
     }
   };
   return (
-    <section className="place-items-center py-20 md:place-items-center lg:place-items-center ">
-      <MyButton className="bg-[#44e5e7]/100 text-black border-none shadow-lg shadow-[#44e5e7] md:ml-[-15rem] lg:ml-0 ">
+    <section className="place-items-center py-20 md:place-items-start lg:place-items-center ">
+      <MyButton className="bg-[#44e5e7]/100 text-black border-none shadow-lg shadow-[#44e5e7] md:ml-20  lg:ml-0 ">
         Testimonials
       </MyButton>
-      <p className="font-medium lg:text-5xl/15 text-2xl lg:w-3xl w-sm pt-8 text-center md:ml-[-20rem] lg:ml-0 lg:place-self-center ">
+      <p className="font-medium lg:text-5xl/15 text-2xl lg:w-3xl w-sm pt-8 text-center  lg:ml-0 lg:place-self-center ">
         What Our AI-powered notetakers have to say
       </p>
-      <p className="md:text-lg/10 text-sm text-[rgba(199,247,248,1)] font-200 md:px-74 py-6 text-center place-self-center md:w-full  md:ml-[-20rem] w-sm px-10  ">
+      <p className="md:text-lg/10 text-sm text-[rgba(199,247,248,1)] font-200 md:px-20 py-6 text-center place-self-center md:w-full  md:ml-[-12rem] lg:ml-0 w-sm px-10  ">
         NoteFlow has helped 1000's supercharge their productivity with cutting
         edge AI note taking tools
       </p>
-      <div className="flex p-5 md:ml-[-20rem] lg:ml-0">
+      <div className="flex p-5 md:ml-[-12rem] lg:ml-0">
         <div className="block ">
           {reviews.slice(0, reviewslength).map((review) => (
             <div
@@ -97,10 +97,7 @@ const Reviews = () => {
         </div>
       </div>
 
-      <MyButton
-        onClick={() => handleShowMore()}
-        className=" lg:ml-0 md:ml-[-10rem]"
-      >
+      <MyButton onClick={() => handleShowMore()} className=" md:ml-5 lg:ml-0 ">
         {showMore ? "Show Less" : " Show More"}
       </MyButton>
     </section>
