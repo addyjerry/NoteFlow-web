@@ -30,7 +30,7 @@ const Reviews = () => {
       <p className="font-medium lg:text-5xl/15 text-2xl lg:w-3xl w-sm pt-8 text-center  lg:ml-0 lg:place-self-center ">
         What Our AI-powered notetakers have to say
       </p>
-      <p className="md:text-lg/10 text-sm text-[rgba(199,247,248,1)] font-200 md:px-20 py-6 text-center place-self-center md:w-full  w-sm px-10  ">
+      <p className="md:text-lg/10 text-sm text-[rgba(199,247,248,1)] font-200 md:px-20 py-6 text-center place-self-center md:w-full lg:w-3xl  w-sm px-10  ">
         NoteFlow has helped 1000's supercharge their productivity with cutting
         edge AI note taking tools
       </p>

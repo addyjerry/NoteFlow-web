@@ -4,7 +4,7 @@ import Logo from "../assets/images/Logo.webp";
 const Footer = () => {
   return (
     <section className="place-self-center py-18  md:ml-0 md:place-self-start lg:place-self-center">
-      <div className="md:flex gap-90 md:gap-20 block">
+      <div className="md:flex gap-90 md:gap-20 lg:gap-90 block">
         <a href="/">
           <span className="flex font-bold text-xl gap-3 mb-10 lg:mb-0 md:ml-3 lg:ml-0">
             <img src={Logo} alt="NoteFlow Logo" className="size-[28px]" />
