@@ -17,17 +17,23 @@ const Header = () => {
   };
   return (
     <section className="flex lg:gap-52 py-1 lg:place-self-center gap-20 md:gap-63 md:ml-0 lg:ml-0 px-5 ">
-      <span className="flex lg:font-bold text-xl gap-3">
-        <img src={Logo} alt="NoteFlow Logo" className="size-[28px]" />
-        <p>NoteFlow</p>
-      </span>
+      <a href="/">
+        <span className="flex lg:font-bold text-xl gap-3">
+          <img src={Logo} alt="NoteFlow Logo" className="size-[28px]" />
+          <p>NoteFlow</p>
+        </span>
+      </a>
       <Navbar />
       <LayoutGrid
         className="flex lg:hidden"
         onClick={() => setMobilemenu(!mobilemenu)}
       />
       {mobilemenu ? (
-        <Sidebar setLoginMenu={setLoginMenu} setSignUpMenu={setSignUpMenu} />
+        <Sidebar
+          setLoginMenu={setLoginMenu}
+          setSignUpMenu={setSignUpMenu}
+          handleSignUp={handleSignUp}
+        />
       ) : (
         <></>
       )}

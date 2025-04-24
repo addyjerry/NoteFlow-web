@@ -5,10 +5,12 @@ const Footer = () => {
   return (
     <section className="place-self-center py-18  md:ml-0 md:place-self-start lg:place-self-center">
       <div className="md:flex gap-90 md:gap-20 block">
-        <span className="flex font-bold text-xl gap-3 mb-10 lg:mb-0 md:ml-3 lg:ml-0">
-          <img src={Logo} alt="NoteFlow Logo" className="size-[28px]" />
-          <p>NoteFlow</p>
-        </span>
+        <a href="/">
+          <span className="flex font-bold text-xl gap-3 mb-10 lg:mb-0 md:ml-3 lg:ml-0">
+            <img src={Logo} alt="NoteFlow Logo" className="size-[28px]" />
+            <p>NoteFlow</p>
+          </span>
+        </a>
         <div className="md:flex gap-12 grid grid-cols-2">
           <div className="block md:text-sm lg:text-xl">
             <p className="font-bold text-xl md:text-sm lg:text-xl p-2">Home</p>
