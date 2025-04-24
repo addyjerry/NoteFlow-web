@@ -13,14 +13,14 @@ const QuestionSection = () => {
   return (
     <section className="place-self-center md:place-self-start ">
       <div>
-        <p className="font-bold lg:text-5xl/15 md:text-4xl lg:w-4xl w-xl px-10 pt-8 md:text-center place-self-center md:place-self-start lg:place-self-center md:ml-[-10rem] ml-50 lg:ml-0">
+        <p className="font-bold lg:text-5xl/15 md:text-4xl lg:w-4xl w-xl px-10 pt-8 md:text-center place-self-center md:place-self-start lg:place-self-center  ml-50 md:ml-25 ">
           Frequently Asked Questions
         </p>
-        <p className="md:text-lg/10 text-[rgba(199,247,248,1)] w-3xl  font-200 lg:px-100 px-60 py-6 md:text-center text-left lg:w-full md:ml-[-10rem] ml-2  lg:ml-0 md:place-self-start ">
+        <p className="md:text-lg/10 text-[rgba(199,247,248,1)] w-3xl  font-200 lg:px-100 px-60 py-6 md:text-center text-left lg:w-full  ml-2  lg:ml-0 md:place-self-start ">
           The most commonly asked questions about NoteFlow. Have any other
           questions? <u>Chat with our expert tech team</u>
         </p>
-        <div className="lg:flex md:grid md:gap-3 gap-7 lg:place-self-center place-self-start grid grid-cols-2 md:pl-40 lg:pl-0 md:ml-[-10rem] ml-65 lg:ml-0">
+        <div className="lg:flex md:grid md:gap-3 gap-7 lg:place-self-center place-self-start grid grid-cols-2 md:pl-40 lg:pl-0 md:ml-15 ml-65 lg:ml-0">
           <MyButton className="bg-[#44e5e7]/100 text-black border-none shadow-lg shadow-[#44e5e7]">
             General
           </MyButton>
@@ -28,7 +28,7 @@ const QuestionSection = () => {
           <MyButton>Features</MyButton>
           <MyButton>Integrations</MyButton>
         </div>
-        <div className="place-self-center xl:ml-50 py-20 px-56  md:w-full md:place-self-start lg:place-self-center md:px-0 md:ml-[-10rem] lg:px-56">
+        <div className="place-self-center xl:ml-50 py-20 px-56  md:w-full md:place-self-start lg:place-self-center md:px-0 md:ml-10 lg:ml-0 lg:px-56">
           {questions.map((question) => (
             <div key={question.id} className="block md:p-5 p-2 md:w-full">
               <div className="flex flex-row lg:gap-7 md:gap-0 gap-5 ">
