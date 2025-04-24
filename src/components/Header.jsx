@@ -104,7 +104,7 @@ const Header = () => {
       {loginMenu ? (
         <div className="fixed top-0 left-0 backdrop-blur-2xl z-10 text-center w-full h-full ">
           <div className="bg-black  place-self-center mt-20 flex">
-            <div className=" py-40 px-6 w-xs">
+            <div className=" py-40 px-6 w-xs hidden lg:block">
               <p className="p-5 font-bold text-2xl">Let's Get You Signed Up</p>
               <p className="p-2">
                 No charges, no fees. Get note taking in minutes!
