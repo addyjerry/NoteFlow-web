@@ -11,7 +11,7 @@ const QuestionSection = () => {
   };
 
   return (
-    <section className="place-self-center md:place-self-start ">
+    <section className="place-self-center md:place-self-start xl:place-self-center ">
       <div>
         <p className="font-bold lg:text-5xl/15 md:text-4xl lg:w-4xl w-xl px-10 pt-8 md:text-center place-self-center md:place-self-start lg:place-self-center  ml-50 md:ml-25 ">
           Frequently Asked Questions
