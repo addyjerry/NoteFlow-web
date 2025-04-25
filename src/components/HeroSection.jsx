@@ -25,13 +25,12 @@ const HeroSection = () => {
             Get Started <MoveRight className="hidden lg:flex" />
           </MyButton>
         </div>
-        <>
-          <img
-            src={Notes}
-            alt="Notes image"
-            className="lg:w-250 md:size-120 ml-[-4rem] lg:h-200 md:ml-[-10rem] xl:ml-[-8rem] mt-[-9rem] xl:w-180 md:mt-7 lg:mt-[-3rem]"
-          />
-        </>
+
+        <img
+          src={Notes}
+          alt="Notes image"
+          className="lg:w-250 md:size-120 size-100  lg:h-200 md:ml-[-10rem] ml-[-2rem] xl:ml-[-8rem] mt-[-14rem] xl:w-180 md:mt-7 lg:mt-[-3rem]"
+        />
       </div>
       <div className="lg:flex md:flex block">
         <div className="flex ml-5">

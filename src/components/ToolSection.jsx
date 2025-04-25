@@ -1,6 +1,5 @@
 import React from "react";
 import Notestool from "../assets/images/Smart.webp";
-
 import Reminder from "../assets/images/Reminder.webp";
 const ToolSection = () => {
   return (

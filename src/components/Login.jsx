@@ -1,9 +1,6 @@
-import React, { useState } from "react";
-import Logo from "../assets/images/Logo.webp";
-import Navbar from "./Navbar";
+import React from "react";
 import MyButton from "./MyButton";
-import { SquareX, LayoutGrid } from "lucide-react";
-import Sidebar from "./Sidebar";
+import { SquareX } from "lucide-react";
 
 const Login = ({ handleSignUp }) => {
   return (

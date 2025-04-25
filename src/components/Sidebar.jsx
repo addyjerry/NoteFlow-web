@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-
+import React from "react";
 import MyButton from "./MyButton";
-import { SquareX, LayoutGrid } from "lucide-react";
+import { SquareX } from "lucide-react";
 
 const Sidebar = ({ handleSignUp, setSignUpMenu, setLoginMenu }) => {
   return (

@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import Logo from "../assets/images/Logo.webp";
 import Navbar from "./Navbar";
 import MyButton from "./MyButton";
-import { SquareX, LayoutGrid } from "lucide-react";
+import { SquareX, LayoutGrid, SunDim, MoonStar } from "lucide-react";
 import Sidebar from "./Sidebar";
 import Login from "./Login";
 
-const Header = () => {
+const Header = ({ toggleMode, darkmode }) => {
   const [loginMenu, setLoginMenu] = useState(false);
   const [signUpMenu, setSignUpMenu] = useState(false);
   const [mobilemenu, setMobilemenu] = useState(false);
@@ -16,7 +16,7 @@ const Header = () => {
     setSignUpMenu(!signUpMenu);
   };
   return (
-    <section className="flex lg:gap-52 py-1 lg:place-self-center gap-20 md:gap-63 md:ml-0 lg:ml-0 px-5 ">
+    <section className="flex lg:gap-52 py-1 lg:place-self-center gap-10 md:gap-60 md:ml-0 lg:ml-0 px-5 ">
       <a href="/">
         <span className="flex lg:font-bold text-xl gap-3">
           <img src={Logo} alt="NoteFlow Logo" className="size-[28px]" />
@@ -24,10 +24,15 @@ const Header = () => {
         </span>
       </a>
       <Navbar />
-      <LayoutGrid
-        className="flex lg:hidden"
-        onClick={() => setMobilemenu(!mobilemenu)}
-      />
+      <div className="flex gap-7 lg:hidden">
+        {darkmode ? (
+          <MoonStar onClick={toggleMode} />
+        ) : (
+          <SunDim onClick={toggleMode} />
+        )}
+
+        <LayoutGrid onClick={() => setMobilemenu(!mobilemenu)} />
+      </div>
       {mobilemenu ? (
         <Sidebar
           setLoginMenu={setLoginMenu}

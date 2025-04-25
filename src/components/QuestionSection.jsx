@@ -13,10 +13,10 @@ const QuestionSection = () => {
   return (
     <section className="place-self-center md:place-self-start xl:place-self-center ">
       <div>
-        <p className="font-bold lg:text-5xl/15 md:text-4xl lg:w-4xl w-xl px-10 pt-8 md:text-center place-self-center md:place-self-start lg:place-self-center  ml-50 md:ml-25 ">
+        <p className="font-bold lg:text-5xl/15 md:text-4xl lg:w-4xl w-xl px-10 pt-8 md:text-center place-self-center md:place-self-start lg:place-self-center  ml-60 md:ml-25 ">
           Frequently Asked Questions
         </p>
-        <p className="md:text-lg/10 text-[rgba(199,247,248,1)] w-3xl  font-200 lg:px-100 px-60 py-6 md:text-center text-left lg:w-full  ml-2  lg:ml-0 md:place-self-start ">
+        <p className="md:text-lg/10 text-[rgba(199,247,248,1)] w-3xl  font-200 lg:px-100 px-60 py-6 md:text-center text-left lg:w-full  ml-7  lg:ml-0 md:place-self-start ">
           The most commonly asked questions about NoteFlow. Have any other
           questions? <u>Chat with our expert tech team</u>
         </p>
@@ -28,9 +28,9 @@ const QuestionSection = () => {
           <MyButton>Features</MyButton>
           <MyButton>Integrations</MyButton>
         </div>
-        <div className="place-self-center xl:ml-50 py-20 px-56  md:w-full md:place-self-start lg:place-self-center md:px-0 md:ml-10 lg:ml-0 lg:px-56">
+        <div className="place-self-center xl:ml-50 py-20 px-56 ml-5  md:w-full md:place-self-start lg:place-self-center md:px-0 md:ml-23 lg:ml-0 lg:px-56">
           {questions.map((question) => (
-            <div key={question.id} className="block md:p-5 p-2 md:w-full">
+            <div key={question.id} className="block md:p-5 p-2  md:w-full ">
               <div className="flex flex-row lg:gap-7 md:gap-0 gap-5 ">
                 <div className="inline-flex font-medium md:text-xl text-lg">
                   <img
@@ -38,21 +38,21 @@ const QuestionSection = () => {
                     alt="icon"
                     className="size-7 md:size-12"
                   />
-                  <p className="md:p-3 w-3xs lg:w-xl md:w-md text-sm md:text-xl">
+                  <p className="md:p-3 px-5 w-3xs lg:w-xl md:w-md text-xs md:text-xl mr-[-2rem]">
                     {question.question}
                   </p>
                 </div>
                 <>
                   {question.id === answer ? (
                     <ChevronUp
-                      className="md:m-4  "
+                      className="md:m-4 mr-5 md:mr-0"
                       onClick={() => {
                         handleAnswer(question.id);
                       }}
                     />
                   ) : (
                     <ChevronDown
-                      className="md:m-4 "
+                      className="md:m-4 mr-5 md:mr-0 "
                       onClick={() => handleAnswer(question.id)}
                     />
                   )}
@@ -60,7 +60,7 @@ const QuestionSection = () => {
               </div>
 
               {question.id === answer ? (
-                <p className="md:p-10 w-2xs md:w-2xl text-[rgba(199,247,248,1)]">
+                <p className="md:p-10 w-2xs md:w-2xl text-xs px-7 text-[rgba(199,247,248,1)]">
                   {question.answer}
                 </p>
               ) : (
