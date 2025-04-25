@@ -20,7 +20,7 @@ const Organizations = () => {
     amazon,
   ];
   return (
-    <section className="py-20 lg:text-center text-left place-self-center  lg:ml-15  ">
+    <section className="py-20 lg:text-center text-left place-self-center  lg:ml-15  dark:bg-gray-600 ">
       <p className="lg:p-15 md:py-10  lg:ml-4 text-center px-10">
         Organizations powered by <b>NoteFlow</b>
       </p>
@@ -29,7 +29,7 @@ const Organizations = () => {
           <img
             src={organization}
             alt="organization"
-            className="lg:h-8 h-6 px-0 size-20"
+            className="lg:h-8 h-6 px-0 size-20  "
             key={index}
           />
         ))}

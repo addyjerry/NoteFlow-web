@@ -30,14 +30,13 @@ function App() {
       className={`md:place-self-center lg:px-18 py-12 ml-0 lg:ml-0 md:ml-0 w-full overflow-x-hidden   
  ${
    darkmode
-     ? "dark:bg-white text-black"
+     ? "bg-white text-black"
      : "bg-gradient-to-b from-[#061212] to-[#0e2e2e] "
  } `}
     >
       <Header toggleMode={toggleMode} darkmode={darkmode} />
-
       <HeroSection />
-      <Organizations />
+      <Organizations darkmode={darkmode} />
       <ToolSection />
       <QuestionSection />
       <Reviews />
