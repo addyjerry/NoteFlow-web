@@ -31,7 +31,7 @@ function App() {
  ${
    darkmode
      ? "bg-white text-black"
-     : "bg-gradient-to-b from-[#061212] to-[#0e2e2e] "
+     : "bg-gradient-to-b from-[#011f1f] to-[#001414] "
  } `}
     >
       <Header toggleMode={toggleMode} darkmode={darkmode} />

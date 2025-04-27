@@ -16,7 +16,7 @@ const Header = ({ toggleMode, darkmode }) => {
     setSignUpMenu(!signUpMenu);
   };
   return (
-    <section className="flex lg:gap-52 py-1 lg:place-self-center gap-10 md:gap-60 md:ml-0 lg:ml-0 px-5 ">
+    <section className="flex lg:gap-33 py-1 lg:place-self-center gap-10 md:gap-60 md:ml-0 lg:ml-0 px-5 ">
       <a href="/">
         <span className="flex lg:font-bold text-xl gap-3">
           <img src={Logo} alt="NoteFlow Logo" className="size-[28px]" />
@@ -24,20 +24,24 @@ const Header = ({ toggleMode, darkmode }) => {
         </span>
       </a>
       <Navbar />
-      <div className="flex gap-7 lg:hidden">
+      <div className="flex gap-7 ">
         {darkmode ? (
           <MoonStar onClick={toggleMode} />
         ) : (
           <SunDim onClick={toggleMode} />
         )}
 
-        <LayoutGrid onClick={() => setMobilemenu(!mobilemenu)} />
+        <LayoutGrid
+          onClick={() => setMobilemenu(!mobilemenu)}
+          className="lg:hidden"
+        />
       </div>
       {mobilemenu ? (
         <Sidebar
           setLoginMenu={setLoginMenu}
           setSignUpMenu={setSignUpMenu}
           handleSignUp={handleSignUp}
+          darkmode={darkmode}
         />
       ) : (
         <></>
@@ -53,7 +57,11 @@ const Header = ({ toggleMode, darkmode }) => {
         </MyButton>
       </div>
       {loginMenu ? (
-        <div className="fixed top-0 left-0 backdrop-blur-2xl z-10 text-center w-full h-full ">
+        <div
+          className={`fixed top-0 left-0 backdrop-blur-2xl z-10 text-center w-full h-full ${
+            darkmode ? "text-black" : ""
+          }`}
+        >
           <div className="bg-black  place-self-center mt-20 flex">
             <div className=" py-40 px-6 w-xs hidden lg:block">
               <p className="p-5 font-bold text-2xl">Let's Get You Signed Up</p>

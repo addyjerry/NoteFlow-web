@@ -23,7 +23,7 @@ const Reviews = () => {
     }
   };
   return (
-    <section className="place-items-center py-20 md:place-items-center lg:place-items-center ">
+    <section className="place-items-center py-20  ">
       <MyButton className="bg-[#44e5e7]/100 text-black border-none shadow-lg shadow-[#44e5e7]  ">
         Testimonials
       </MyButton>
@@ -34,18 +34,18 @@ const Reviews = () => {
         NoteFlow has helped 1000's supercharge their productivity with cutting
         edge AI note taking tools
       </p>
-      <div className="flex p-5 ">
+      <div className="flex p-5   ">
         <div className="block ">
           {reviews.slice(0, reviewslength).map((review) => (
             <div
               key={review.id}
-              className="block  rounded-xl p-5 shadow my-5 shadow-black md:text-lg font-300 md:w-84 bg-[#0e2e2e] "
+              className="block  rounded-xl p-5  my-5  md:text-lg font-300 md:w-84 bg-[#0e2e2e]  "
             >
-              <img src={review.rating} alt="rating" className="py-5 " />
+              <img src={review.rating} alt="rating" className="py-5 px-3 " />
               <p className="text-[rgba(236, 252, 253, 1)] md:p-3 text-sm  md:text-md">
                 {review.text}
               </p>
-              <div className="flex gap-3 py-5">
+              <div className="flex gap-3 py-5 px-3">
                 <img src={review.avatar} alt="avatar" className="size-10 " />
                 <div>
                   <h3 className=" font-700 p-1 text-[#44e5e7]/100 text-sm  md:text-xl">
@@ -61,11 +61,15 @@ const Reviews = () => {
           {rev3.slice(0, rev3length).map((review) => (
             <div
               key={review.id}
-              className="block  rounded-xl p-5 m-5 shadow shadow-black text-lg font-300 w-84 bg-[#0e2e2e]"
+              className="block  rounded-xl p-5 m-5  text-lg font-300 w-84 bg-[#0e2e2e]"
             >
-              <img src={review.rating} alt="rating" className="py-5 w-sm" />
+              <img
+                src={review.rating}
+                alt="rating"
+                className="py-5 w-sm px-3"
+              />
               <p className="text-[rgba(236, 252, 253, 1)] p-3">{review.text}</p>
-              <div className="flex gap-3 py-5">
+              <div className="flex gap-3 py-5 px-3">
                 <img src={review.avatar} alt="avatar" className="size-10 " />
                 <div>
                   <h3 className="text-xl font-700 p-1 text-[#44e5e7]/100">
@@ -77,25 +81,25 @@ const Reviews = () => {
             </div>
           ))}
         </div>
-        <div className="block ">
+        <div className="block md:mx-5 lg:mx-0">
           {rev.slice(0, revlength).map((review) => (
             <div
               key={review.id}
-              className="md:block hidden  rounded-xl md:p-5 my-5 shadow shadow-black text-lg font-300 md:w-84  p-0 bg-[#0e2e2e] "
+              className="md:block hidden  rounded-xl md:p-5 my-5  text-lg font-300 md:w-84  p-0 bg-[#0e2e2e] "
             >
               <img
                 src={review.rating}
                 alt="rating"
-                className="py-5 md:w-sm w-2xs"
+                className="py-5 md:w-sm w-2xs px-3"
               />
               <p className="text-[rgba(236, 252, 253, 1)] md:p-3 text-3xs md:text-lg">
                 {review.text}
               </p>
-              <div className="flex gap-3 py-5">
+              <div className="flex gap-3 py-5 px-3">
                 <img
                   src={review.avatar}
                   alt="avatar"
-                  className="md:size-10 size-5"
+                  className="md:size-10 size-5 "
                 />
                 <div>
                   <h3 className="text-xl font-700 p-1 text-[#44e5e7]/100">

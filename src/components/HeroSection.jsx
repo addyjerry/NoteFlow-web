@@ -14,10 +14,10 @@ const HeroSection = () => {
     <section className="lg:py-5 py-0 lg:place-self-center px-5   ">
       <div className=" lg:text-left block md:flex md:gap-23 lg:gap-20 ">
         <div className=" py-40 md:w-xs lg:w-xl ">
-          <h1 className="font-medium lg:text-5xl/15 text-2xl lg:w-xl  py-1">
+          <h1 className="font-bold lg:text-5xl/15 text-2xl lg:w-xl  py-1">
             AI-Powered Notes. Organize and Summarize in Seconds
           </h1>
-          <p className="lg:text-lg/10 text-sm text-[rgba(199,247,248,1)] lg:w-sm font-300  py-7">
+          <p className="lg:text-lg/10 text-sm text-[rgba(199,247,248,1)] lg:w-sm font-300  py-8">
             Let AI organize & summarize your notes, saving you time and boosting
             productivity
           </p>

@@ -20,8 +20,8 @@ const Organizations = () => {
     amazon,
   ];
   return (
-    <section className="py-20 lg:text-center text-left place-self-center  lg:ml-15  dark:bg-gray-600 ">
-      <p className="lg:p-15 md:py-10  lg:ml-4 text-center px-10">
+    <section className="py-20 lg:text-center text-left place-self-center  lg:ml-15 text-lg dark:bg-gray-600 ">
+      <p className="lg:my-15 md:py-10  lg:ml-4 text-center px-10">
         Organizations powered by <b>NoteFlow</b>
       </p>
       <div className="grid lg:grid-cols-4  gap-7 gap-x-17  grid-cols-2 md:gap-5 ml-5  ml:ml-0 lg:gap-x-55 lg:gap-y-10">
