@@ -1,12 +1,12 @@
 import React from "react";
-import netflix from "../assets/images/Netflix.webp";
-import exxon from "../assets/images/Exxon.webp";
-import microsoft from "../assets/images/Microsoft.webp";
-import vice from "../assets/images/Vice.webp";
-import walmart from "../assets/images/Walmart.webp";
-import chase from "../assets/images/Chase.webp";
-import visa from "../assets/images/Visa.png";
-import amazon from "../assets/images/Amazon.webp";
+import netflix from "../assets/svg/Netflix.svg";
+import exxon from "../assets/svg/Exxon.svg";
+import microsoft from "../assets/svg/Microsoft.svg";
+import vice from "../assets/svg/Vice.svg";
+import walmart from "../assets/svg/Walmart.svg";
+import chase from "../assets/svg/Chase.svg";
+import visa from "../assets/svg/Visa.svg";
+import amazon from "../assets/svg/Amazon.svg";
 
 const Organizations = () => {
   const organizations = [
