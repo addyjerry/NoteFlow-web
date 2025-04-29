@@ -29,7 +29,7 @@ const QuestionSection = () => {
           <MyButton>Features</MyButton>
           <MyButton>Integrations</MyButton>
         </div>
-        <div className="place-self-center 2xl:pl-130 py-20 px-56 ml-5  md:w-full md:place-self-start lg:place-self-center md:px-0 md:ml-23 lg:ml-0 lg:px-56">
+        <div className="place-self-center 2xl:pl-130 py-20 px-56   md:w-full md:place-self-start lg:place-self-center md:px-0 md:ml-23 lg:ml-0 lg:px-56">
           {questions.map((question) => (
             <div key={question.id} className="block md:p-6 p-2  md:w-full ">
               <div className="flex flex-row lg:gap-7 md:gap-0 gap-5 ">
