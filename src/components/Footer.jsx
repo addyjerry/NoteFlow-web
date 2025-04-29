@@ -16,7 +16,7 @@ const Footer = () => {
             <p className="font-bold text-xl md:text-sm lg:text-xl p-2">Home</p>
             <ul className="p-2">
               <li className="py-3">FAQ</li>
-              <li className="py-3">Features</li>
+              <li className="py-3">Feature</li>
               <li className="py-3">Companies</li>
               <li className="py-3">Testimonials</li>
             </ul>
