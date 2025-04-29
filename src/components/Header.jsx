@@ -16,7 +16,7 @@ const Header = ({ toggleMode, darkmode }) => {
     setSignUpMenu(!signUpMenu);
   };
   return (
-    <section className="flex lg:gap-33 py-1 lg:place-self-center gap-10 md:gap-60 md:ml-0 lg:ml-0 px-5 ">
+    <section className="flex lg:gap-33 py-1 lg:place-self-center  gap-[17vw] md:gap-60 md:ml-0 lg:ml-0 px-5 ">
       <a href="/">
         <span className="flex lg:font-bold text-xl gap-3">
           <img src={Logo} alt="NoteFlow Logo" className="size-[28px]" />
