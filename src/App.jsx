@@ -13,7 +13,7 @@ function App() {
   return (
     <ThemeProvider>
       <div
-        className={`md:place-self-center lg:px-18 py-12 ml-0 lg:ml-0 md:ml-0 w-full overflow-x-hidden dark:bg-gradient-to-b from-[#011f1f] to-[#001414] `}
+        className={`md:place-content-center font-Poppins lg:px-18 py-12  w-full overflow-x-hidden dark:bg-gradient-to-b from-[#011f1f] to-[#001414] bg-green-600 `}
       >
         <Header />
         <HeroSection />

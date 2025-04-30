@@ -5,6 +5,7 @@ body {
   color: rgba(236, 252, 253, 1);
   font-family: Poppins;
   padding: 0rem;
+  margin: 0;
   box-sizing: border-box;
   overflow-x: hidden;
 }

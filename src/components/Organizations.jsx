@@ -20,11 +20,11 @@ function Organizations() {
     amazon,
   ];
   return (
-    <section className="py-20 lg:text-center text-left place-content-center  lg:ml-15 text-lg w-[100vw] bg-green-700">
+    <section className="py-20 lg:text-center text-left md:px-5 place-self-center text-lg  ">
       <p className="lg:my-15 py-20  text-center px-10">
         Organizations powered by <b>NoteFlow</b>
       </p>
-      <div className="grid lg:grid-cols-4  gap-7 gap-x-17  grid-cols-2 md:gap-5 ml-5  ml:ml-0 lg:ml-[-3rem] lg:gap-x-0 lg:gap-y-10">
+      <div className="grid lg:grid-cols-4  gap-7 gap-x- 17  grid-cols-2 md:gap-5 ml-5  md:ml-15 lg:ml-0 lg:gap-x-57 lg:gap-y-10">
         {organizations.map((organization, index) => (
           <img
             src={organization}

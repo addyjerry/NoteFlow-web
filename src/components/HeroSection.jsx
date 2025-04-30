@@ -11,7 +11,7 @@ import avatar5 from "../assets/images/avatar5.webp";
 const HeroSection = () => {
   const pictures = [avatar1, avatar2, avatar3, avatar4, avatar5];
   return (
-    <section className="lg:py-5 py-0 lg:place-content-center  px-5 w-[100vw] bg-green-700 dark:bg-bg-gradient-to-b from-[#011f1f] to-[#001414] ">
+    <section className="lg:py-5 py-0 lg:place-self-center px-5">
       <div>
         <div className=" lg:text-left block md:flex md:gap-23 lg:gap-20  ">
           <div className=" py-40 md:w-xs lg:w-xl ">
