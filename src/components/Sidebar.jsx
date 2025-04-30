@@ -4,7 +4,7 @@ import { SquareX } from "lucide-react";
 
 const Sidebar = ({ handleSignUp, setSignUpMenu, setLoginMenu }) => {
   return (
-    <div className="fixed top-0 left-0 backdrop-blur-2xl z-10 text-center w-[100vw] h-full py-8 px-3">
+    <div className="fixed top-0 left-0 backdrop-blur-2xl z-10 text-center w-[100vw] h-full py-8 px-3 text-white">
       <div className="bg-black   place-self-end mt-0 block w-60 h-150 py-6 rounded-xl  ">
         <SquareX
           className="place-self-start  size-8 m-2"

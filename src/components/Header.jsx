@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Logo from "../assets/images/Logo.webp";
+import Login from "./Login";
 import Navbar from "./Navbar";
 import MyButton from "./MyButton";
 import { SquareX, LayoutGrid } from "lucide-react";
@@ -42,7 +43,7 @@ const Header = () => {
         <></>
       )}
       {signUpMenu ? <Login handleSignUp={handleSignUp} /> : <></>}
-      <div className="lg:flex gap-3 mt-[-1.2rem] hidden">
+      <div className="lg:flex gap-3 mt-[-1.2rem] hidden text-white">
         <MyButton onClick={() => setSignUpMenu(!signUpMenu)}>Login</MyButton>
         <MyButton
           className="bg-[#44e5e7]/100 text-black border-none"
@@ -53,7 +54,7 @@ const Header = () => {
       </div>
       {loginMenu ? (
         <div
-          className={`fixed top-0 left-0 backdrop-blur-2xl z-10 text-center w-full h-full `}
+          className={`fixed top-0 left-0 backdrop-blur-2xl z-10 text-center w-full h-full text-white`}
         >
           <div className="bg-black  place-self-center mt-20 flex">
             <div className=" py-40 px-6 w-xs hidden lg:block">
@@ -72,22 +73,23 @@ const Header = () => {
                 <input
                   type="text"
                   placeholder="Username"
-                  className="p-2 bg-white text-black rounded-2xl"
+                  className="p-2 bg-white text-black rounded-2xl w-70"
                 />
                 <p className="p-2">Password</p>
                 <input
                   type="password"
                   placeholder="password"
-                  className="p-2 bg-white text-black rounded-2xl mb-10 "
+                  className="p-2 bg-white text-black rounded-2xl mb-10 w-70"
                 />{" "}
                 <br />
                 <input type="checkbox" />
                 <label htmlFor="checkbox" className="text-xs pl-2 ">
                   I agree with all terms
                 </label>
+                <br />
                 <MyButton
                   onClick={() => setLoginMenu(!loginMenu)}
-                  className="bg-[#44e5e7]/100 text-black border-none py-1 px-15"
+                  className="bg-[#44e5e7]/100 text-black border-none py-1 px-15 w-70"
                 >
                   Get Started
                 </MyButton>

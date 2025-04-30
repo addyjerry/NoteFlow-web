@@ -5,7 +5,7 @@ import { SquareX } from "lucide-react";
 const Login = ({ handleSignUp }) => {
   return (
     <div className="fixed top-0 left-0 backdrop-blur-2xl z-10 text-center w-[100vw] h-full py-8 px-3">
-      <div className="bg-black place-self-center mt-10 block w-80 h-100 py-6 rounded-xl  ">
+      <div className="bg-black place-self-center mt-10 block w-80 h-100 py-6 rounded-xl  text-white">
         <SquareX
           className="place-self-end  size-8 m-2"
           onClick={handleSignUp}
