@@ -11,7 +11,7 @@ const MyButton = ({ className, children, onClick }) => {
       onClick={onClick}
       onPointerMove={handleColor}
       className={`border-2 border-white rounded-4xl lg:px-8 md:px-5 lg:py-4 py-3 px-2 cursor-pointer ${className} ${
-        color ? "bg-amber-800" : ""
+        color ? "bg-[#44e5e7]/100" : ""
       }`}
     >
       {children}
