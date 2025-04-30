@@ -20,7 +20,7 @@ function Organizations() {
     amazon,
   ];
   return (
-    <section className="py-20 lg:text-center text-left place-self-center  lg:ml-15 text-lg dark:bg-gray-600 ">
+    <section className="py-20 lg:text-center text-left place-self-center  lg:ml-15 text-lg ">
       <p className="lg:my-15 py-20 lg:ml-4 text-center px-10">
         Organizations powered by <b>NoteFlow</b>
       </p>
@@ -29,7 +29,7 @@ function Organizations() {
           <img
             src={organization}
             alt="organization"
-            className="lg:h-8 h-6 px-0 size-20 lg:size-30 "
+            className="lg:h-8 h-6 px-0 size-20 lg:size-30 shadow-xl bg-origin-content"
             key={index}
           />
         ))}
