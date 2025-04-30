@@ -40,7 +40,7 @@ const QuestionSection = () => {
                     className="size-7 md:size-12"
                   />
                   <p
-                    className="md:p-3 px-5 w-3xs lg:w-xl md:w-md text-xs md:text-xl mr-[-2rem]"
+                    className="md:p-3 px-5 w-3xs lg:w-xl md:w-md text-sm md:text-xl mr-[-2rem]"
                     onClick={() => {
                       handleAnswer(question.id);
                     }}
@@ -51,14 +51,14 @@ const QuestionSection = () => {
                 <>
                   {question.id === answer ? (
                     <ChevronUp
-                      className="mt-2"
+                      className=" md:mt-2"
                       onClick={() => {
                         handleAnswer(question.id);
                       }}
                     />
                   ) : (
                     <ChevronDown
-                      className=" mt-2 "
+                      className=" md:mt-2 "
                       onClick={() => handleAnswer(question.id)}
                     />
                   )}
@@ -66,7 +66,7 @@ const QuestionSection = () => {
               </div>
 
               {question.id === answer ? (
-                <p className="md:py-2 px-18 w-2xs md:w-xl text-md text-[rgba(199,247,248,1)]">
+                <p className="md:py-2 md:px-18 px-8 w-2xs md:w-xl text-sm text-[rgba(199,247,248,1)]">
                   {question.answer}
                 </p>
               ) : (
