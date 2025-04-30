@@ -41,11 +41,11 @@ const Reviews = () => {
               key={review.id}
               className="block  rounded-xl p-5  my-5  md:text-lg font-300 md:w-84 bg-[#0e2e2e]  "
             >
-              <img src={review.rating} alt="rating" className="py-5 px-3 " />
-              <p className="text-[rgba(236, 252, 253, 1)] md:p-3 text-sm  md:text-md">
+              <img src={review.rating} alt="rating" className="py-5 md:px-3 " />
+              <p className="text-[rgba(236, 252, 253, 1)] md:p-3 text-sm  md:text-lg">
                 {review.text}
               </p>
-              <div className="flex gap-3 py-5 px-3">
+              <div className="flex gap-3 py-5 md:px-3">
                 <img src={review.avatar} alt="avatar" className="size-10 " />
                 <div>
                   <h3 className=" font-700 p-1 text-[#44e5e7]/100 text-sm  md:text-xl">

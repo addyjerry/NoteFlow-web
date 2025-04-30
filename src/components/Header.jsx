@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import Logo from "../assets/images/Logo.webp";
 import Navbar from "./Navbar";
 import MyButton from "./MyButton";
-import { SquareX, LayoutGrid, SunDim, MoonStar } from "lucide-react";
+import { SquareX, LayoutGrid } from "lucide-react";
 import Sidebar from "./Sidebar";
-import Login from "./Login";
 
-const Header = ({ toggleMode, darkmode }) => {
+import ThemeToggle from "./ThemeToggle";
+
+const Header = () => {
   const [loginMenu, setLoginMenu] = useState(false);
   const [signUpMenu, setSignUpMenu] = useState(false);
   const [mobilemenu, setMobilemenu] = useState(false);
@@ -16,7 +17,7 @@ const Header = ({ toggleMode, darkmode }) => {
     setSignUpMenu(!signUpMenu);
   };
   return (
-    <section className="flex lg:gap-33 py-1 lg:place-self-center  gap-[17vw] md:gap-60 md:ml-0 lg:ml-0 px-5 ">
+    <section className="flex lg:gap-33 py-1 lg:place-self-center  gap-[17vw] md:gap-60 md:ml-0 lg:ml-0 px-5 dark:text-white text-black">
       <a href="/">
         <span className="flex lg:font-bold text-xl gap-3">
           <img src={Logo} alt="NoteFlow Logo" className="size-[28px]" />
@@ -25,12 +26,7 @@ const Header = ({ toggleMode, darkmode }) => {
       </a>
       <Navbar />
       <div className="flex gap-7 ">
-        {darkmode ? (
-          <MoonStar onClick={toggleMode} />
-        ) : (
-          <SunDim onClick={toggleMode} />
-        )}
-
+        <ThemeToggle />
         <LayoutGrid
           onClick={() => setMobilemenu(!mobilemenu)}
           className="lg:hidden"
@@ -41,7 +37,6 @@ const Header = ({ toggleMode, darkmode }) => {
           setLoginMenu={setLoginMenu}
           setSignUpMenu={setSignUpMenu}
           handleSignUp={handleSignUp}
-          darkmode={darkmode}
         />
       ) : (
         <></>
@@ -58,9 +53,7 @@ const Header = ({ toggleMode, darkmode }) => {
       </div>
       {loginMenu ? (
         <div
-          className={`fixed top-0 left-0 backdrop-blur-2xl z-10 text-center w-full h-full ${
-            darkmode ? "text-black" : ""
-          }`}
+          className={`fixed top-0 left-0 backdrop-blur-2xl z-10 text-center w-full h-full `}
         >
           <div className="bg-black  place-self-center mt-20 flex">
             <div className=" py-40 px-6 w-xs hidden lg:block">
