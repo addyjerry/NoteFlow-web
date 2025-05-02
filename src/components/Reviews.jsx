@@ -39,14 +39,14 @@ const Reviews = () => {
           {reviews.slice(0, reviewslength).map((review) => (
             <div
               key={review.id}
-              className="block  rounded-xl p-5  my-5  md:text-lg font-300 md:w-84 bg-[#0e2e2e]  "
+              className="block  rounded-xl lg:p-10 p-10 my-5  md:text-lg font-300 md:w-90 lg:w-92 bg-[#0e2e2e]  "
             >
-              <img src={review.rating} alt="rating" className="py-5 md:px-3 " />
+              <img src={review.rating} alt="rating" className="py-5 md:px-3  " />
               <p className="text-[rgba(236, 252, 253, 1)] md:p-3 text-sm  md:text-lg">
                 {review.text}
               </p>
               <div className="flex gap-3 py-5 md:px-3">
-                <img src={review.avatar} alt="avatar" className="size-10 " />
+                <img src={review.avatar} alt="avatar" className="size-15 " />
                 <div>
                   <h3 className=" font-700 p-1 text-[#44e5e7]/100 text-sm  md:text-xl">
                     {review.name}
@@ -57,11 +57,11 @@ const Reviews = () => {
             </div>
           ))}
         </div>
-        <div className="lg:block hidden ">
+        <div className="lg:block hidden  ">
           {rev3.slice(0, rev3length).map((review) => (
             <div
               key={review.id}
-              className="block  rounded-xl p-5 m-5  text-lg font-300 w-84 bg-[#0e2e2e]"
+              className="block  rounded-xl lg:p-10 m-5  text-lg font-300 md:w-92 bg-[#0e2e2e]"
             >
               <img
                 src={review.rating}
@@ -70,7 +70,7 @@ const Reviews = () => {
               />
               <p className="text-[rgba(236, 252, 253, 1)] p-3">{review.text}</p>
               <div className="flex gap-3 py-5 px-3">
-                <img src={review.avatar} alt="avatar" className="size-10 " />
+                <img src={review.avatar} alt="avatar" className="size-15 " />
                 <div>
                   <h3 className="text-xl font-700 p-1 text-[#44e5e7]/100">
                     {review.name}
@@ -81,11 +81,11 @@ const Reviews = () => {
             </div>
           ))}
         </div>
-        <div className="block md:mx-5 lg:mx-0">
+        <div className="block  lg:mx-0 md:ml-5">
           {rev.slice(0, revlength).map((review) => (
             <div
               key={review.id}
-              className="md:block hidden  rounded-xl md:p-5 my-5  text-lg font-300 md:w-84  p-0 bg-[#0e2e2e] "
+              className="md:block hidden  rounded-xl md:p-10 my-5  text-lg font-300 lg:w-92  p-0 bg-[#0e2e2e] "
             >
               <img
                 src={review.rating}
@@ -99,7 +99,7 @@ const Reviews = () => {
                 <img
                   src={review.avatar}
                   alt="avatar"
-                  className="md:size-10 size-5 "
+                  className="md:size-15 size-5 "
                 />
                 <div>
                   <h3 className="text-xl font-700 p-1 text-[#44e5e7]/100">

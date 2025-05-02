@@ -17,11 +17,11 @@ const Sidebar = ({ handleSignUp, setSignUpMenu, setLoginMenu }) => {
           <li className="py-2">Community</li>
         </ul>
         <div className="block pt-10">
-          <MyButton onClick={setSignUpMenu} className="w-50 my-3">
+          <MyButton onClick={setSignUpMenu} className="w-50 my-3 text-white border-2 border-white">
             Login
           </MyButton>
           <MyButton
-            className="bg-[#44e5e7]/100 text-black border-none w-50"
+            className="bg-[#44e5e7]/100 dark:text-black text-white border-none w-50"
             onClick={setLoginMenu}
           >
             Get Started

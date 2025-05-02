@@ -22,7 +22,7 @@ const HeroSection = () => {
               Let AI organize & summarize your notes, saving you time and
               boosting productivity
             </p>
-            <MyButton className="bg-[#44e5e7]/100 text-black border-none flex gap-1 shadow shadow-[#44e5e7]">
+            <MyButton className="bg-[#44e5e7]/100 text-black border-none flex gap-1 ">
               Get Started <MoveRight className="hidden lg:flex" />
             </MyButton>
           </div>
@@ -45,7 +45,7 @@ const HeroSection = () => {
             ))}
           </div>
           <p className="lg:px-10 md:px-10 lg:py-2 py-4 font-extralight">
-            Trusted by <b className="text-[#44e5e7]/100">12,653+</b>{" "}
+            Trusted by <b className="dark:text-[#44e5e7]/100 text-purple-500">12,653+</b>{" "}
             productivity junkies
           </p>
         </div>

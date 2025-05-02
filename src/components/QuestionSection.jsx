@@ -21,8 +21,8 @@ const QuestionSection = () => {
           questions? <u>Chat with our expert tech team</u>
         </p>
 
-        <div className="lg:flex md:grid md:gap-3 gap-7 lg:place-self-center place-self-start grid grid-cols-2 md:pl-40 lg:pl-0 md:ml-15 ml-65 lg:ml-0">
-          <MyButton className="bg-[#44e5e7]/100 text-black border-none shadow-lg shadow-[#44e5e7]">
+        <div className="lg:flex md:grid md:gap-3 gap-7 lg:place-self-center place-self-start grid grid-cols-2 md:pl-40 lg:pl-0 md:ml-25 ml-65 lg:ml-0">
+          <MyButton >
             General
           </MyButton>
           <MyButton>Pricing</MyButton>

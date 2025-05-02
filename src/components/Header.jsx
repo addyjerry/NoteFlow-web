@@ -22,7 +22,7 @@ const Header = () => {
       <a href="/">
         <span className="flex lg:font-bold text-xl gap-3">
           <img src={Logo} alt="NoteFlow Logo" className="size-[28px]" />
-          <p>NoteFlow</p>
+          <p >NoteFlow</p>
         </span>
       </a>
       <Navbar />
@@ -30,7 +30,7 @@ const Header = () => {
         <ThemeToggle />
         <LayoutGrid
           onClick={() => setMobilemenu(!mobilemenu)}
-          className="lg:hidden"
+          className="lg:hidden md:ml-10"
         />
       </div>
       {mobilemenu ? (
@@ -46,7 +46,7 @@ const Header = () => {
       <div className="lg:flex gap-3 mt-[-1.2rem] hidden text-white">
         <MyButton onClick={() => setSignUpMenu(!signUpMenu)}>Login</MyButton>
         <MyButton
-          className="bg-[#44e5e7]/100 text-black border-none"
+          className="bg-[#44e5e7]/100 text-black border-none shadow"
           onClick={() => setLoginMenu(!loginMenu)}
         >
           Get Started
@@ -59,7 +59,7 @@ const Header = () => {
           <div className="bg-black  place-self-center mt-20 flex">
             <div className=" py-40 px-6 w-xs hidden lg:block">
               <p className="p-5 font-bold text-2xl">Let's Get You Signed Up</p>
-              <p className="p-2">
+              <p className="p-2 ">
                 No charges, no fees. Get note taking in minutes!
               </p>
             </div>
