@@ -24,7 +24,7 @@ const Reviews = () => {
   };
   return (
     <section className="place-items-center py-20  ">
-      <MyButton className="bg-[#44e5e7]/100 text-black border-none shadow-lg shadow-[#44e5e7]  ">
+      <MyButton className="bg-[#44e5e7]/100 text-black border-none shadow">
         Testimonials
       </MyButton>
       <p className="font-medium lg:text-5xl/15 text-2xl lg:w-3xl w-sm pt-8 text-center  lg:ml-0 lg:place-self-center ">
@@ -41,7 +41,11 @@ const Reviews = () => {
               key={review.id}
               className="block  rounded-xl lg:p-10 p-10 my-5  md:text-lg font-300 md:w-90 lg:w-92 bg-[#0e2e2e]  "
             >
-              <img src={review.rating} alt="rating" className="py-5 md:px-3  " />
+              <img
+                src={review.rating}
+                alt="rating"
+                className="py-5 md:px-3  "
+              />
               <p className="text-[rgba(236, 252, 253, 1)] md:p-3 text-sm  md:text-lg">
                 {review.text}
               </p>
