@@ -3,6 +3,7 @@ import MyButton from "./MyButton";
 import { reviews } from "./Questions/reviews";
 import { rev } from "./Questions/reviews";
 import { rev3 } from "./Questions/reviews";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 const Reviews = () => {
   const [showMore, setShowMore] = useState(false);
@@ -24,31 +25,39 @@ const Reviews = () => {
   };
   return (
     <section className="place-items-center py-20  ">
-      <MyButton className="bg-[#44e5e7]/100 text-black border-none shadow-lg shadow-[#44e5e7]  ">
+      <MyButton className="bg-[#44e5e7]/100 text-black border-none shadow">
         Testimonials
       </MyButton>
       <p className="font-medium lg:text-5xl/15 text-2xl lg:w-3xl w-sm pt-8 text-center  lg:ml-0 lg:place-self-center ">
         What Our AI-powered notetakers have to say
       </p>
-      <p className="md:text-lg/10 text-sm text-[rgba(199,247,248,1)] font-200 md:px-20 py-6 text-center place-self-center md:w-full lg:w-3xl  w-sm px-10  ">
+      <p className="md:text-lg/10 text-md dark:text-[rgba(199,247,248,1)] font-200 md:px-20 py-6 text-center place-self-center md:w-full lg:w-3xl  w-sm px-10  ">
         NoteFlow has helped 1000's supercharge their productivity with cutting
         edge AI note taking tools
       </p>
-      <div className="flex p-5   ">
+      <div className="flex p-5 flex-wrap justify-center">
         <div className="block ">
           {reviews.slice(0, reviewslength).map((review) => (
             <div
               key={review.id}
-              className="block  rounded-xl lg:p-10 p-10 my-5  md:text-lg font-300 md:w-90 lg:w-92 bg-[#0e2e2e]  "
+              className="block rounded-xl lg:p-10 p-5 my-5 font-300 lg:w-90 w-60 dark:bg-[#0e2e2e] bg-[#44e5e7]/100 text-white "
             >
-              <img src={review.rating} alt="rating" className="py-5 md:px-3  " />
-              <p className="text-[rgba(236, 252, 253, 1)] md:p-3 text-sm  md:text-lg">
+              <img
+                src={review.rating}
+                alt="rating"
+                className="py-5 md:px-3  "
+              />
+              <p className="text-[rgba(236, 252, 253, 1)] md:p-3 text-sm  lg:text-lg">
                 {review.text}
               </p>
               <div className="flex gap-3 py-5 md:px-3">
-                <img src={review.avatar} alt="avatar" className="size-15 " />
-                <div>
-                  <h3 className=" font-700 p-1 text-[#44e5e7]/100 text-sm  md:text-xl">
+                <img
+                  src={review.avatar}
+                  alt="avatar"
+                  className="lg:size-15 size-10 "
+                />
+                <div className="lg:text-xl text-sm">
+                  <h3 className=" font-700 p-1 dark:text-[#44e5e7]/100 text-green-700 text-sm  ">
                     {review.name}
                   </h3>
                   <p>{review.position}</p>
@@ -57,22 +66,28 @@ const Reviews = () => {
             </div>
           ))}
         </div>
-        <div className="lg:block hidden  ">
+        <div className="md:block hidden  ">
           {rev3.slice(0, rev3length).map((review) => (
             <div
               key={review.id}
-              className="block  rounded-xl lg:p-10 m-5  text-lg font-300 md:w-92 bg-[#0e2e2e]"
+              className="block  rounded-xl lg:p-10 p-5 m-5  text-lg font-300 lg:w-90 w-60 dark:bg-[#0e2e2e] bg-[#44e5e7]/100 text-white "
             >
               <img
                 src={review.rating}
                 alt="rating"
                 className="py-5 w-sm px-3"
               />
-              <p className="text-[rgba(236, 252, 253, 1)] p-3">{review.text}</p>
+              <p className="text-[rgba(236, 252, 253, 1)] p-3 text-sm  lg:text-lg">
+                {review.text}
+              </p>
               <div className="flex gap-3 py-5 px-3">
-                <img src={review.avatar} alt="avatar" className="size-15 " />
-                <div>
-                  <h3 className="text-xl font-700 p-1 text-[#44e5e7]/100">
+                <img
+                  src={review.avatar}
+                  alt="avatar"
+                  className="lg:size-15 size-10 "
+                />
+                <div className="lg:text-xl text-sm">
+                  <h3 className=" font-700 p-1 dark:text-[#44e5e7]/100 text-green-700">
                     {review.name}
                   </h3>
                   <p>{review.position}</p>
@@ -81,28 +96,28 @@ const Reviews = () => {
             </div>
           ))}
         </div>
-        <div className="block  lg:mx-0 md:ml-5">
+        <div className="lg:block hidden">
           {rev.slice(0, revlength).map((review) => (
             <div
               key={review.id}
-              className="md:block hidden  rounded-xl md:p-10 my-5  text-lg font-300 lg:w-92  p-0 bg-[#0e2e2e] "
+              className="md:block hidden  rounded-xl lg:p-10 p-5 my-5  text-lg font-300 lg:w-90 w-60  dark:bg-[#0e2e2e] bg-[#44e5e7]/100 text-white "
             >
               <img
                 src={review.rating}
                 alt="rating"
                 className="py-5 md:w-sm w-2xs px-3"
               />
-              <p className="text-[rgba(236, 252, 253, 1)] md:p-3 text-3xs md:text-lg">
+              <p className="text-[rgba(236, 252, 253, 1)] md:p-3 text-sm  lg:text-lg">
                 {review.text}
               </p>
               <div className="flex gap-3 py-5 px-3">
                 <img
                   src={review.avatar}
                   alt="avatar"
-                  className="md:size-15 size-5 "
+                  className="lg:size-15 size-10 "
                 />
-                <div>
-                  <h3 className="text-xl font-700 p-1 text-[#44e5e7]/100">
+                <div className="lg:text-xl text-sm">
+                  <h3 className=" font-700 p-1 dark:text-[#44e5e7]/100 text-green-700">
                     {review.name}
                   </h3>
                   <p>{review.position}</p>
@@ -114,7 +129,7 @@ const Reviews = () => {
       </div>
 
       <MyButton onClick={() => handleShowMore()} className=" md:ml-5 lg:ml-0 ">
-        {showMore ? "Show Less" : " Show More"}
+        {showMore ? "Show Less" : "Show More"}
       </MyButton>
     </section>
   );

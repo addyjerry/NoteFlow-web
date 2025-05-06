@@ -5,48 +5,68 @@ import { ChevronUp } from "lucide-react";
 import { ChevronDown } from "lucide-react";
 
 const QuestionSection = () => {
+  const [activeFilter, setActiveFilter] = useState("general");
+
   const [answer, setAnswer] = useState(false);
+
+  const handleFilterChange = (filter) => {
+    setActiveFilter(filter);
+  };
+  const filteredQuestions =
+    activeFilter === "general"
+      ? questions
+      : questions.filter((q) => q.type === activeFilter);
+  const filters = [
+    { value: "general", label: "General" },
+    { value: "pricing", label: "Pricing" },
+    { value: "features", label: "Features" },
+    { value: "integration", label: "Integration" },
+  ];
+
   const handleAnswer = (id) => {
     setAnswer(id !== answer ? id : null);
   };
 
   return (
-    <section className="place-self-center md:place-self-start xl:place-self-center xl:px-10 py-7">
-      <div className="lg:px-50 ">
-        <p className="font-bold lg:text-5xl/15 md:text-4xl lg:w-4xl w-xl px-10 pt-8 md:text-center place-self-center md:place-self-start lg:place-self-center  ml-60 md:ml-25 ">
+    <section className=" text-center ">
+      <div className=" lg:py-25 w-xl md:w-full">
+        <p className=" lg:text-6xl md:text-3xl text-xl py-8 font-bold px-40 text-left md:text-center">
           Frequently Asked Questions
         </p>
-        <p className="md:text-lg/10 text-[rgba(199,247,248,1)] w-3xl  font-200 lg:px-70 px-60 py-6 md:text-center text-left lg:w-full lg:place-self-center ml-7  lg:ml-0 md:place-self-start ">
+        <p className="md:text-lg/10 dark:text-[rgba(199,247,248,1)]  font-200 md:px-60 px-35 md:py-6 text-center lg:w-full md:w-5xl place-self-center  ">
           The most commonly asked questions about NoteFlow. Have any other
           questions? <u>Chat with our expert tech team</u>
         </p>
 
-        <div className="lg:flex md:grid md:gap-3 gap-7 lg:place-self-center place-self-start grid grid-cols-2 md:pl-40 lg:pl-0 md:ml-25 ml-65 lg:ml-0">
-          <MyButton >
-            General
-          </MyButton>
-          <MyButton>Pricing</MyButton>
-          <MyButton>Features</MyButton>
-          <MyButton>Integrations</MyButton>
+        <div className="flex flex-wrap gap-2 mb-8 md:justify-center px-40 md:px-0">
+          {filters.map((filter) => (
+            <MyButton
+              key={filter.value}
+              onClick={() => handleFilterChange(filter.value)}
+              className={`px-4 py-2 rounded ${
+                activeFilter === filter.value ? "bg-[#44e5e7] " : " "
+              }`}
+            >
+              {filter.label}
+            </MyButton>
+          ))}
         </div>
-        <div className="place-self-center 2xl:pl-130 py-20 px-56   md:w-full md:place-self-start lg:place-self-center md:px-0 md:ml-23 lg:ml-0 lg:px-56">
-          {questions.map((question) => (
-            <div key={question.id} className="block md:p-6 p-2  md:w-full ">
-              <div className="flex flex-row lg:gap-7 md:gap-0 gap-5 ">
-                <div className="inline-flex font-medium md:text-xl text-lg">
+        <div className="space-y-4  text-left place-self-center">
+          {filteredQuestions.map((question) => (
+            <div key={question.id} className="lg:px-25 py-3 ">
+              <div className="flex flex-nowrap justify-between w-2xs md:w-full lg:w-4xl text-sm md:text-xl">
+                <div
+                  className="flex justify-between"
+                  onClick={() => {
+                    handleAnswer(question.id);
+                  }}
+                >
                   <img
-                    src={question.pic}
+                    src={question.icon}
                     alt="icon"
-                    className="size-7 md:size-12"
+                    className="size-8 md:size-12"
                   />
-                  <p
-                    className="md:p-3 px-5 w-3xs lg:w-xl md:w-md text-sm md:text-xl mr-[-2rem]"
-                    onClick={() => {
-                      handleAnswer(question.id);
-                    }}
-                  >
-                    {question.question}
-                  </p>
+                  <p className="md:p-3 p-2">{question.question}</p>
                 </div>
                 <>
                   {question.id === answer ? (
@@ -66,7 +86,7 @@ const QuestionSection = () => {
               </div>
 
               {question.id === answer ? (
-                <p className="md:py-2 md:px-18 px-8 w-2xs md:w-xl text-sm text-[rgba(199,247,248,1)]">
+                <p className="py-2 px-5 w-2xs text-xs md:text-xl text-left md:w-lg md:px-17 lg:px-15 lg:w-3xl ">
                   {question.answer}
                 </p>
               ) : (

@@ -3,15 +3,15 @@ import Logo from "../assets/images/Logo.webp";
 
 const Footer = () => {
   return (
-    <section className="place-self-center py-18  px-6  ">
-      <div className="md:flex gap-90 md:gap-20 lg:gap-90 block">
+    <section className="py-18  ">
+      <div className="flex flex-wrap justify-between lg:gap-90 ">
         <a href="/">
-          <span className="flex font-bold text-xl gap-3 mb-10 lg:mb-0 md:ml-3 lg:ml-0">
+          <span className="flex font-bold text-xl gap-3 mb-10 lg:mb-0  ">
             <img src={Logo} alt="NoteFlow Logo" className="size-[28px]" />
             <p>NoteFlow</p>
           </span>
         </a>
-        <div className="md:flex gap-12 grid grid-cols-2">
+        <div className="flex gap-12 flex-wrap justify-around">
           <div className="block md:text-sm lg:text-xl">
             <p className="font-bold text-xl md:text-sm lg:text-xl p-2">Home</p>
             <ul className="p-2">

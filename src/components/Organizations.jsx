@@ -20,17 +20,19 @@ function Organizations() {
     amazon,
   ];
   return (
-    <section className="py-20 lg:text-center text-left md:px-5 place-self-center text-lg  ">
-      <p className="lg:my-15 py-20  text-center px-10">
-        Organizations powered by <b>NoteFlow</b>
-      </p>
-      <div className="grid lg:grid-cols-4  gap-7 gap-x- 17  grid-cols-2 md:gap-5 ml-5  md:ml-15 lg:ml-0 lg:gap-x-57 lg:gap-y-10">
-        {organizations.map((organization, index) => (
+    <section className="lg:py-20 text-center md:text-xl text-sm">
+      <div className="py-20">
+        <p className="dark:text-[rgba(199,247,248,1)]">
+          Organizations powered by <b>NoteFlow</b>
+        </p>
+      </div>
+      <div className="grid lg:grid-cols-4 grid-cols-2 gap-10 lg:gap-x-65">
+        {organizations.map((org) => (
           <img
-            src={organization}
-            alt="organization"
-            className="lg:h-8 h-6 px-0 size-20 lg:size-30 shadow-xl bg-origin-content"
-            key={index}
+            src={org}
+            alt="org"
+            className="md:w-25 md:h-10 w-20"
+            key={org.index}
           />
         ))}
       </div>
