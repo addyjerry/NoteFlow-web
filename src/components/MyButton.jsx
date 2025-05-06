@@ -1,19 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 
-const MyButton = ({ className, children, onClick }) => {
-  const [color, setColor] = useState(false);
-  const handleColor = () => {
-    setColor(!color);
-  };
-
+const MyButton = ({ children, onClick, className }) => {
   return (
     <button
+      className={`py-3 px-5 lg:text-xl border-1 bprder-black rounded-4xl cursor-pointer flex gap-2 hover:bg-[#44e5e7] hover:text-white hover:border-none ${className}`}
       onClick={onClick}
-      onMouseOver={handleColor}
-      onMouseLeave={handleColor}
-      className={`border-2 dark:border-white border-black text-black dark:text-white rounded-4xl lg:px-8 md:px-5 lg:py-4 py-3 px-2 cursor-pointer ${className} ${
-        color ? "dark:bg-[#44e5e7]/100 border-1 bg-black text-white shadow " : ""
-      }`}
     >
       {children}
     </button>

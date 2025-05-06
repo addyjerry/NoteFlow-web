@@ -1,54 +1,49 @@
 import React from "react";
+import Sum from "../assets/images/Sum.png";
 import MyButton from "./MyButton";
 import { MoveRight } from "lucide-react";
-import Notes from "../assets/images/Summarizer.webp";
-import avatar1 from "../assets/images/avatar4.webp";
-import avatar2 from "../assets/images/avatar3.webp";
-import avatar3 from "../assets/images/avatar2.webp";
-import avatar4 from "../assets/images/avatar1.webp";
-import avatar5 from "../assets/images/avatar5.webp";
+import ava1 from "../assets/images/avatar1.webp";
+import ava2 from "../assets/images/avatar2.webp";
+import ava3 from "../assets/images/avatar3.webp";
+import ava4 from "../assets/images/avatar4.webp";
+import ava5 from "../assets/images/avatar5.webp";
 
 const HeroSection = () => {
-  const pictures = [avatar1, avatar2, avatar3, avatar4, avatar5];
+  const avatars = [ava1, ava2, ava3, ava4, ava5];
   return (
-    <section className="lg:py-5 py-0 lg:place-self-center px-5">
-      <div>
-        <div className=" lg:text-left block md:flex md:gap-23 lg:gap-20  ">
-          <div className=" py-40 md:w-xs lg:w-xl ">
-            <h1 className="font-bold lg:text-5xl/15 text-2xl lg:w-xl  py-1">
-              AI-Powered Notes. Organize and Summarize in Seconds
-            </h1>
-            <p className="lg:text-lg/10 text-sm text-[rgba(199,247,248,1)] lg:w-sm font-300  py-8">
-              Let AI organize & summarize your notes, saving you time and
-              boosting productivity
-            </p>
-            <MyButton className="bg-[#44e5e7]/100 text-black border-none flex gap-1 ">
-              Get Started <MoveRight className="hidden lg:flex" />
-            </MyButton>
-          </div>
-
-          <img
-            src={Notes}
-            alt="Notes image"
-            className="lg:w-250 md:size-120 size-100  lg:h-200 md:ml-[-10rem] ml-[-2rem] xl:ml-[-8rem] mt-[-14rem] xl:w-180 md:mt-7 lg:mt-[-3rem]"
-          />
-        </div>
-        <div className=" md:flex block ml-5">
-          <div className="flex ">
-            {pictures.map((picture, index) => (
-              <img
-                src={picture}
-                alt="avatar"
-                className="w-10 ml-[-1rem] md:h-10"
-                key={index}
-              />
-            ))}
-          </div>
-          <p className="lg:px-10 md:px-10 lg:py-2 py-4 font-extralight">
-            Trusted by <b className="dark:text-[#44e5e7]/100 text-purple-500">12,653+</b>{" "}
-            productivity junkies
+    <section className="container max-w-fit">
+      <div className=" md:flex gap-5 justify-between  lg:py-30 py-20 ">
+        <div className="lg:w-2xl  py-12 w-2xs md:w-xs">
+          <p className="font-bold lg:text-5xl py-3">
+            AI-Powered Notes. Organize and Summarize in Seconds
           </p>
+          <p className="lg:w-md lg:py-10 py-3 dark:text-[rgba(199,247,248,1)]">
+            Let AI organize & summarize your notes, saving you time and boosting
+            productivity
+          </p>
+          <MyButton className="bg-[#44e5e7] border-none">
+            Get Started <MoveRight />
+          </MyButton>
         </div>
+        <div>
+          <img src={Sum} alt="Sum" className="lg:w-xl lg:h-120" />
+        </div>
+      </div>
+      <div className="md:flex pl-4">
+        <div className="flex">
+          {avatars.map((avatar) => (
+            <img
+              src={avatar}
+              alt="avatar"
+              className="ml-[-1rem] lg:size-12 size-8
+          "
+            />
+          ))}
+        </div>
+        <p className="md:px-5 text-xs py-5">
+          Trusted by <b className="dark:text-[#44e5e7]/100">12,653+</b>{" "}
+          productivity junkies
+        </p>
       </div>
     </section>
   );
