@@ -35,6 +35,7 @@ const HeroSection = () => {
             <img
               src={avatar}
               alt="avatar"
+              key={avatar.index}
               className="ml-[-1rem] lg:size-12 size-8
           "
             />

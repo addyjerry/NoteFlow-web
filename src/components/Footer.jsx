@@ -11,7 +11,7 @@ const Footer = () => {
             <p>NoteFlow</p>
           </span>
         </a>
-        <div className="flex gap-12 flex-wrap justify-around ml-[-2rem]">
+        <div className="flex gap-12 flex-wrap justify-around ml-[-1rem]">
           <div className="block md:text-sm lg:text-xl">
             <p className="font-bold  md:text-sm lg:text-xl p-2 dark:text-white">
               Home
