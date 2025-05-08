@@ -8,7 +8,7 @@ const ThemeToggle = () => {
   return (
     <div
       onClick={toggleTheme}
-      className=" text-gray-800 dark:text-white border-none transition-colors duration-200 lg:mt-4 pl-5 lg:px-0 hover:cursor-pointer"
+      className="fixed md:left-[95vw] left-[80vw] top-120 text-gray-800 dark:text-white border-none transition-colors duration-200 lg:mt-4 pl-5 lg:px-0 hover:cursor-pointer"
     >
       {darkMode ? <SunDim /> : <SunMoon />}
     </div>

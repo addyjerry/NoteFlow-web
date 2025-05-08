@@ -30,15 +30,15 @@ const QuestionSection = () => {
   return (
     <section className=" text-center ">
       <div className=" lg:py-25 w-xl md:w-full">
-        <p className=" lg:text-6xl md:text-3xl text-xl py-8 font-bold px-40 text-left md:text-center">
+        <p className=" lg:text-6xl md:text-3xl text-xl py-8 dark:text-white font-bold md:px-40 px-36 text-left md:text-center">
           Frequently Asked Questions
         </p>
-        <p className="md:text-lg/10 dark:text-[rgba(199,247,248,1)]  font-200 md:px-60 px-35 md:py-6 text-center lg:w-full md:w-5xl place-self-center  ">
+        <p className="md:text-lg/10 dark:text-[rgba(199,247,248,1)] hidden md:flex  font-200 md:px-60 px-35 md:py-6 text-center lg:w-full md:w-5xl place-self-center  ">
           The most commonly asked questions about NoteFlow. Have any other
           questions? <u>Chat with our expert tech team</u>
         </p>
 
-        <div className="flex flex-wrap gap-2 mb-8 md:justify-center px-40 md:px-0">
+        <div className="flex flex-wrap gap-2 mb-8 md:justify-center px-37 md:px-0">
           {filters.map((filter) => (
             <MyButton
               key={filter.value}
@@ -64,7 +64,7 @@ const QuestionSection = () => {
                   <img
                     src={question.icon}
                     alt="icon"
-                    className="size-8 md:size-12"
+                    className="size-8 md:size-12 bg-gradient-to-t from-[#0c2222] to-[#0E2E2E] dark:rounded-none rounded-2xl"
                   />
                   <p className="md:p-3 p-2">{question.question}</p>
                 </div>
@@ -86,7 +86,7 @@ const QuestionSection = () => {
               </div>
 
               {question.id === answer ? (
-                <p className="py-2 px-5 w-2xs text-xs md:text-xl text-left md:w-lg md:px-17 lg:px-15 lg:w-3xl ">
+                <p className="py-2 px-1 w-2xs text-xs md:text-xl text-left md:w-lg md:px-17 lg:px-15 lg:w-3xl ">
                   {question.answer}
                 </p>
               ) : (

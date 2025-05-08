@@ -5,19 +5,19 @@ const ToolSection = () => {
   return (
     <section className="py-20 flex-row justify-center">
       <div className="">
-        <p className="lg:text-6xl text-2xl px-3 font-extrabold text-center md:px-40 xl:w-6xl">
+        <p className="lg:text-6xl text-2xl px-3 font-extrabold text-center md:px-40 xl:w-6xl dark:text-white">
           All The Tools You Need to
           <b className="dark:text-[#44e5e7]/100"> Supercharge</b> Your Note
           Taking
         </p>
       </div>
       <div>
-        <div className=" flex flex-col-reverse md:flex-row justify-between lg:gap-5 my-30 place-items-center">
+        <div className=" flex flex-col-reverse md:flex-row justify-between lg:gap-5 md:my-30 my-20 place-items-center">
           <div>
-            <img src={sat} alt="smart" className="md:w-xl w-70 py-15 md:py-0" />
+            <img src={sat} alt="smart" className="md:w-xl w-70 " />
           </div>
           <div className="md:w-2xl lg:py-38 md:pl-25 place-self-center w-2xs ">
-            <p className="lg:text-5xl md:py-8 py-5 font-bold">
+            <p className="lg:text-5xl text-xl md:py-8 py-5 dark:text-white font-bold">
               Smart Organization
             </p>
             <p className="text-sm md:text-lg">
@@ -37,7 +37,7 @@ const ToolSection = () => {
             />
           </div>
           <div className="md:w-xl w-2xs lg:py-45 md:py-18 md:pr-5  ">
-            <p className="lg:text-5xl  md:py-10 py-5   font-bold">
+            <p className="lg:text-5xl text-xl md:py-10 dark:text-white font-bold">
               Contextual Reminders
             </p>
             <p className="md:pr-10 text-sm md:text-lg">
