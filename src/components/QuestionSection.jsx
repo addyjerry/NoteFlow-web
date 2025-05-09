@@ -49,7 +49,9 @@ const QuestionSection = () => {
               key={filter.value}
               onClick={() => handleFilterChange(filter.value)}
               className={`px-4 py-2 rounded ${
-                activeFilter === filter.value ? "bg-[#44e5e7] border-none" : " "
+                activeFilter === filter.value
+                  ? "bg-[#44e5e7] border-none shadow-glow"
+                  : " "
               }`}
             >
               {filter.label}

@@ -22,7 +22,7 @@ const HeroSection = ({ handleLogin }) => {
             productivity
           </p>
           <MyButton
-            className="bg-[#44e5e7] border-none text-black"
+            className="bg-primary-500 shadow-glow border-none text-black glow"
             onClick={handleLogin}
           >
             Get Started <MoveRight className="hidden md:flex" />

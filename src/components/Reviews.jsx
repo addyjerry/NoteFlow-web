@@ -25,7 +25,7 @@ const Reviews = () => {
   };
   return (
     <section className="place-items-center py-20  ">
-      <MyButton className="bg-[#44e5e7]/100 text-black border-none shadow">
+      <MyButton className="bg-[#44e5e7]/100 shadow-glow text-black border-none ">
         Testimonials
       </MyButton>
       <p className="font-bold lg:text-5xl/15 text-2xl lg:w-3xl w-sm pt-8 text-center dark:text-white lg:ml-0 lg:place-self-center ">

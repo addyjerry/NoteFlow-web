@@ -35,7 +35,7 @@ const Header = ({ loginMenu, handleLogin }) => {
       </div>
       {loginMenu ? <LoginMenu handleLogin={handleLogin} /> : null}
       <div className="lg:hidden inline-flex">
-        <LayoutGrid onClick={handleSidebar} />
+        <LayoutGrid onClick={handleSidebar} className="md:mr-5" />
         <ThemeToggle />
       </div>
       {sidebar ? (
