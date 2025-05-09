@@ -10,19 +10,19 @@ const LoginMenu = ({ handleLogin }) => {
           <p className="text-xl font-bold">Lets Get You Signed Up</p>
           <p>No charges, no fees. Get note taking in minutes!</p>
         </div>
-        <div className="dark:dark:bg-[#012020] bg-blue-300 lg:w-xs w-3xs px-10 py-5 rounded-xl">
+        <div className="dark:dark:bg-[#012020] bg-blue-300 lg:w-xs w-3xs px-5 py-5 rounded-xl">
           <SquareX className="justify-self-end  " onClick={handleLogin} />
           <div className="py-20">
-            <p>Emain</p>
+            <p>Email</p>
             <input
               type="text"
-              className="bg-white text-black rounded-2xl p-1 w-full"
+              className="bg-white text-black text-lg rounded-2xl py-2 px-5 w-full my-2"
               placeholder="janet@gmail.com"
             />
             <p>Password</p>
             <input
               type="text"
-              className="bg-white text-green-800 rounded-2xl p-1 w-full"
+              className="bg-white text-green-800 rounded-2xl text-lg py-2 px-5 w-full my-2"
               placeholder="***********"
             />
           </div>
