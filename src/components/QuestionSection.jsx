@@ -43,7 +43,7 @@ const QuestionSection = () => {
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-2 mb-8 md:justify-center px-37 md:px-0">
+        <div className="flex flex-wrap gap-2 mb-8 md:justify-center px-38 md:px-0">
           {filters.map((filter) => (
             <MyButton
               key={filter.value}
