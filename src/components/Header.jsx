@@ -7,12 +7,7 @@ import ThemeToggle from "./ThemeToggle";
 import LoginMenu from "./LoginMenu";
 import { LayoutGrid } from "lucide-react";
 
-const Header = () => {
-  const [loginMenu, setLoginMenu] = useState(false);
-  const handleLogin = () => {
-    setLoginMenu(!loginMenu);
-  };
-
+const Header = ({ loginMenu, handleLogin }) => {
   const [sidebar, setSidebar] = useState(false);
   const handleSidebar = () => {
     setSidebar(!sidebar);

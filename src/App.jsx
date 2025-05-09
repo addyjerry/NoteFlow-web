@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import Organizations from "./components/Organizations";
@@ -11,12 +11,16 @@ import { ThemeProvider } from "./components/ThemeContext";
 import MainLayout from "./components/MainLayout";
 
 function App() {
+  const [loginMenu, setLoginMenu] = useState(false);
+  const handleLogin = () => {
+    setLoginMenu(!loginMenu);
+  };
   return (
     <ThemeProvider>
       <MainLayout>
-        <Header />
+        <Header handleLogin={handleLogin} loginMenu={loginMenu} />
         <ThemeToggle />
-        <HeroSection />
+        <HeroSection handleLogin={handleLogin} />
         <Organizations />
         <ToolSection />
         <QuestionSection />

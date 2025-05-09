@@ -8,7 +8,7 @@ import ava3 from "../assets/images/avatar3.webp";
 import ava4 from "../assets/images/avatar4.webp";
 import ava5 from "../assets/images/avatar5.webp";
 
-const HeroSection = () => {
+const HeroSection = ({ handleLogin }) => {
   const avatars = [ava1, ava2, ava3, ava4, ava5];
   return (
     <section className="container max-w-fit">
@@ -21,7 +21,10 @@ const HeroSection = () => {
             Let AI organize & summarize your notes, saving you time and boosting
             productivity
           </p>
-          <MyButton className="bg-[#44e5e7] border-none text-black">
+          <MyButton
+            className="bg-[#44e5e7] border-none text-black"
+            onClick={handleLogin}
+          >
             Get Started <MoveRight className="hidden md:flex" />
           </MyButton>
         </div>
@@ -42,8 +45,8 @@ const HeroSection = () => {
           ))}
         </div>
         <p className="md:px-5 text-xs md:text-xl py-4 md:py-1 ml-[-1rem]">
-          Trusted by <b className="dark:text-[#44e5e7]/100">12,653+</b>{" "}
-          productivity junkies
+          Trusted by <b className="text-[#44e5e7]/100">12,653+</b> productivity
+          junkies
         </p>
       </div>
     </section>

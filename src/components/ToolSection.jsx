@@ -7,8 +7,7 @@ const ToolSection = () => {
       <div className="">
         <p className="lg:text-6xl text-2xl px-3 font-extrabold text-center md:px-40 xl:w-6xl dark:text-white">
           All The Tools You Need to
-          <b className="dark:text-[#44e5e7]/100"> Supercharge</b> Your Note
-          Taking
+          <b className="text-[#44e5e7]/100"> Supercharge</b> Your Note Taking
         </p>
       </div>
       <div>

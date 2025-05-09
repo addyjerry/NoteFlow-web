@@ -49,7 +49,7 @@ const QuestionSection = () => {
               key={filter.value}
               onClick={() => handleFilterChange(filter.value)}
               className={`px-4 py-2 rounded ${
-                activeFilter === filter.value ? "bg-[#44e5e7] " : " "
+                activeFilter === filter.value ? "bg-[#44e5e7] border-none" : " "
               }`}
             >
               {filter.label}
@@ -69,9 +69,11 @@ const QuestionSection = () => {
                   <img
                     src={question.icon}
                     alt="icon"
-                    className="size-8 md:size-12 bg-gradient-to-t from-[#0c2222] to-[#0E2E2E] dark:rounded-none rounded-2xl"
+                    className="size-8 md:size-12 bg-gradient-to-t from-[#0c2222] to-[#0E2E2E] dark:rounded-none rounded-lg"
                   />
-                  <p className="md:p-3 p-2">{question.question}</p>
+                  <p className="md:p-3 p-1 font-semibold">
+                    {question.question}
+                  </p>
                 </div>
                 <>
                   {question.id === answer ? (
@@ -91,7 +93,7 @@ const QuestionSection = () => {
               </div>
 
               {question.id === answer ? (
-                <p className="py-2 px-1 w-2xs text-xs md:text-xl text-left md:w-lg md:px-17 lg:px-15 lg:w-3xl ">
+                <p className="py-2 px-1 w-2xs text-xs md:text-lg text-left md:w-lg md:px-17 lg:px-15 lg:w-3xl ">
                   {question.answer}
                 </p>
               ) : (

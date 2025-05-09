@@ -3,7 +3,7 @@ import Logo from "../assets/images/Logo.webp";
 
 const Footer = () => {
   return (
-    <footer className="py-18 flex  justify-between xl:gap-92  flex-col lg:flex-row ">
+    <footer className="py-18 flex  justify-between xl:gap-84  flex-col lg:flex-row ">
       <>
         <div className="flex font-bold text-xl dark:text-white gap-3 p-3 lg:mb-0  ">
           <img src={Logo} alt="NoteFlow Logo" className="size-[28px]" />
