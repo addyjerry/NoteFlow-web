@@ -31,7 +31,7 @@ function Organizations() {
           <img
             src={org}
             alt="org"
-            className="w-50 bg-gradient-to-t from-[#104747] to-[#0E2E2E] md:p-5"
+            className="w-50 bg-gradient-to-t from-[#104747] to-[#0E2E2E] p-5"
             key={org.index}
           />
         ))}
