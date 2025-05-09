@@ -37,7 +37,7 @@ const QuestionSection = () => {
           <p className="md:text-lg/10 dark:text-[rgba(199,247,248,1)] font-200 md:px-60 px-35 md:py-6 text-center lg:w-full md:w-5xl place-self-center  ">
             The most commonly asked questions about NoteFlow. Have any other
             questions?{" "}
-            <u className="text-blue-500 hover:cursor-pointer">
+            <u className="text-blue-500 dark:text-[rgba(199,247,248,1)] hover:cursor-pointer">
               Chat with our expert tech team
             </u>
           </p>

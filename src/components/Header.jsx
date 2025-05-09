@@ -13,7 +13,7 @@ const Header = ({ loginMenu, handleLogin }) => {
     setSidebar(!sidebar);
   };
   return (
-    <section className="container flex justify-between mx-auto 2xl:max-w-7xl">
+    <section className="flex justify-between mx-auto 2xl:max-w-7xl">
       <a href="/">
         <div className="flex gap-1 lg:mt-3 ">
           <img src={logo} alt="logo" className="lg:size-9 size-5" />
@@ -35,7 +35,7 @@ const Header = ({ loginMenu, handleLogin }) => {
       </div>
       {loginMenu ? <LoginMenu handleLogin={handleLogin} /> : null}
       <div className="lg:hidden inline-flex">
-        <LayoutGrid onClick={handleSidebar} className="md:mr-5" />
+        <LayoutGrid onClick={handleSidebar} />
         <ThemeToggle />
       </div>
       {sidebar ? (

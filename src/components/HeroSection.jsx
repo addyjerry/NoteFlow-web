@@ -11,8 +11,8 @@ import ava5 from "../assets/images/avatar5.webp";
 const HeroSection = ({ handleLogin }) => {
   const avatars = [ava1, ava2, ava3, ava4, ava5];
   return (
-    <section className="container max-w-fit">
-      <div className=" md:flex gap-5 justify-between  lg:py-30 md:py-20 dark:text-white">
+    <section className="place-self-center  ">
+      <div className=" md:flex  lg:gap-10 md:gap-40 justify-between  lg:py-30 md:py-20 dark:text-white">
         <div className="lg:w-2xl  py-12 w-2xs md:w-xs">
           <p className="font-bold lg:text-5xl py-3 pr-10 md:pr-0 text-xl">
             AI-Powered Notes. Organize and Summarize in Seconds
