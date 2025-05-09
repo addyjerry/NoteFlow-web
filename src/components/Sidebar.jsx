@@ -5,7 +5,7 @@ import { SquareX } from "lucide-react";
 const Sidebar = ({ handleLogin, handleSidebar }) => {
   return (
     <div className="fixed top-0 left-0 backdrop-blur z-10 text-center w-[100vw] h-full py-5 px-3 text-white transform transition-transform duration-300 translate-x-0 ease-in">
-      <div className="bg-[#012020] place-self-end mt-0 block w-50 h-125 py-6 rounded-xl  ">
+      <div className="bg-[#012020] place-self-end mt-0 block w-[70vw] h-[90vh] py-6 rounded-xl text-xl ">
         <SquareX
           className="place-self-start  size-8 m-2"
           onClick={handleSidebar}
@@ -16,7 +16,7 @@ const Sidebar = ({ handleLogin, handleSidebar }) => {
           <li className="py-2">About</li>
           <li className="py-2">Community</li>
         </ul>
-        <div className="block pt-25 px-5">
+        <div className="block pt-[40vh] px-5">
           <MyButton
             onClick={handleLogin}
             className="w-full  justify-center my-5"
