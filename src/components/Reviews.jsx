@@ -35,12 +35,12 @@ const Reviews = () => {
         NoteFlow has helped 1000's supercharge their productivity with cutting
         edge AI note taking tools
       </p>
-      <div className="flex p-5 flex-wrap justify-center">
-        <div className="block ">
+      <div className="flex p-5 lg:flex-nowrap gap-5 justify-center">
+        <div className="block mx-9 md:mx-0">
           {reviews.slice(0, reviewslength).map((review) => (
             <div
               key={review.id}
-              className="block rounded-xl lg:p-10 p-5 my-5 font-300 lg:w-90 w-68 dark:bg-[#0e2e2e] bg-[#44e5e7]/100 text-white "
+              className="block rounded-xl  lg:p-10 p-5 my-5 font-300 w-[100%] max-w-[24rem] dark:bg-[#0e2e2e] bg-[#44e5e7]/100 text-white "
             >
               <img
                 src={review.rating}
@@ -66,11 +66,11 @@ const Reviews = () => {
             </div>
           ))}
         </div>
-        <div className="md:block hidden  ">
+        <div className="md:block hidden mx-9 md:mx-0">
           {rev3.slice(0, rev3length).map((review) => (
             <div
               key={review.id}
-              className="block  rounded-xl lg:p-10 p-5 m-5  text-lg font-300 lg:w-90 w-68 dark:bg-[#0e2e2e] bg-[#44e5e7]/100 text-white "
+              className="block  rounded-xl lg:p-10 p-5 my-5 text-lg font-300 w-[100%] max-w-[24rem] dark:bg-[#0e2e2e] bg-[#44e5e7]/100 text-white "
             >
               <img
                 src={review.rating}
@@ -96,11 +96,11 @@ const Reviews = () => {
             </div>
           ))}
         </div>
-        <div className="lg:block hidden">
+        <div className="lg:block hidden mx-9 md:mx-0">
           {rev.slice(0, revlength).map((review) => (
             <div
               key={review.id}
-              className="md:block hidden  rounded-xl lg:p-10 p-5 my-5  text-lg font-300 lg:w-90 w-68  dark:bg-[#0e2e2e] bg-[#44e5e7]/100 text-white "
+              className="md:block hidden  rounded-xl lg:p-10 p-5 my-5  text-lg font-300 w-[100%] max-w-[24rem]   dark:bg-[#0e2e2e] bg-[#44e5e7]/100 text-white "
             >
               <img
                 src={review.rating}

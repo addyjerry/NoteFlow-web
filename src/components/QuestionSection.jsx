@@ -33,10 +33,15 @@ const QuestionSection = () => {
         <p className=" lg:text-6xl md:text-3xl text-xl py-8 dark:text-white font-bold md:px-40 px-36 text-left md:text-center">
           Frequently Asked Questions
         </p>
-        <p className="md:text-lg/10 dark:text-[rgba(199,247,248,1)] hidden md:flex  font-200 md:px-60 px-35 md:py-6 text-center lg:w-full md:w-5xl place-self-center  ">
-          The most commonly asked questions about NoteFlow. Have any other
-          questions? <u>Chat with our expert tech team</u>
-        </p>
+        <div className="hidden md:flex">
+          <p className="md:text-lg/10 dark:text-[rgba(199,247,248,1)] font-200 md:px-60 px-35 md:py-6 text-center lg:w-full md:w-5xl place-self-center  ">
+            The most commonly asked questions about NoteFlow. Have any other
+            questions?{" "}
+            <u className="text-blue-500 hover:cursor-pointer">
+              Chat with our expert tech team
+            </u>
+          </p>
+        </div>
 
         <div className="flex flex-wrap gap-2 mb-8 md:justify-center px-37 md:px-0">
           {filters.map((filter) => (

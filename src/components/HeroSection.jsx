@@ -41,7 +41,7 @@ const HeroSection = () => {
             />
           ))}
         </div>
-        <p className="md:px-5 text-xs md:text-xl py-4 ml-[-1rem]">
+        <p className="md:px-5 text-xs md:text-xl py-4 md:py-1 ml-[-1rem]">
           Trusted by <b className="dark:text-[#44e5e7]/100">12,653+</b>{" "}
           productivity junkies
         </p>
