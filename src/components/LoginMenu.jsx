@@ -26,7 +26,7 @@ const LoginMenu = ({ handleLogin }) => {
               placeholder="***********"
             />
           </div>
-          <p className="flex gap-1 p-3 text-xs text-center lg:px-8">
+          <p className="flex gap-1 p-3 text-sm text-center lg:px-8">
             <input type="checkbox" name="" id="" />I agree to all terms
           </p>
           <MyButton className=" text-xs w-full justify-center bg-[#44e5e7] border-none">
