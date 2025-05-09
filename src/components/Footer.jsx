@@ -3,17 +3,20 @@ import Logo from "../assets/images/Logo.webp";
 
 const Footer = () => {
   return (
-    <section className="py-18  ">
-      <div className="flex flex-wrap justify-between lg:gap-90 ">
-        <a href="/">
-          <span className="flex font-bold text-xl gap-3 mb-10 lg:mb-0  ">
-            <img src={Logo} alt="NoteFlow Logo" className="size-[28px]" />
+    <footer className="py-18 flex  justify-between xl:gap-84  flex-col lg:flex-row ">
+      <>
+        <div className="flex font-bold text-xl dark:text-white gap-3 p-3 lg:mb-0  ">
+          <img src={Logo} alt="NoteFlow Logo" className="size-[28px]" />
+          <a href="/">
             <p>NoteFlow</p>
-          </span>
-        </a>
-        <div className="flex gap-12 flex-wrap justify-around">
+          </a>
+        </div>
+
+        <div className="flex gap-10 flex-wrap justify-between ml-[-1rem] lg:ml-0 px-5">
           <div className="block md:text-sm lg:text-xl">
-            <p className="font-bold text-xl md:text-sm lg:text-xl p-2">Home</p>
+            <p className="font-bold  md:text-sm lg:text-xl p-2 dark:text-white">
+              Home
+            </p>
             <ul className="p-2">
               <li className="py-3">FAQ</li>
               <li className="py-3">Features</li>
@@ -22,7 +25,9 @@ const Footer = () => {
             </ul>
           </div>
           <div className="block md:text-sm lg:text-xl">
-            <p className="font-bold md:text-sm lg:text-xl p-2">Pricing</p>
+            <p className="font-bold md:text-sm lg:text-xl p-2 dark:text-white">
+              Pricing
+            </p>
             <ul className="p-2">
               <li className="py-3">Plans</li>
               <li className="py-3">Billing</li>
@@ -31,7 +36,9 @@ const Footer = () => {
             </ul>
           </div>
           <div className="block md:text-sm lg:text-xl">
-            <p className="font-bold md:text-sm lg:text-xl p-2">About</p>
+            <p className="font-bold md:text-sm lg:text-xl p-2 dark:text-white">
+              About
+            </p>
             <ul className="p-2">
               <li className="py-3">Careers</li>
               <li className="py-3">Our Stories</li>
@@ -40,7 +47,9 @@ const Footer = () => {
             </ul>
           </div>
           <div className="block md:text-sm lg:text-xl">
-            <p className="font-bold md:text-sm lg:text-xl p-2">Community</p>
+            <p className="font-bold md:text-sm lg:text-xl p-2 dark:text-white">
+              Community
+            </p>
             <ul className="p-2">
               <li className="py-3">Forum</li>
               <li className="py-3">Stories</li>
@@ -49,8 +58,8 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-      </div>
-    </section>
+      </>
+    </footer>
   );
 };
 

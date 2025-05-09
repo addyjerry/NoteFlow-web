@@ -25,22 +25,22 @@ const Reviews = () => {
   };
   return (
     <section className="place-items-center py-20  ">
-      <MyButton className="bg-[#44e5e7]/100 text-black border-none shadow">
+      <MyButton className="bg-[#44e5e7]/100 shadow-glow text-black border-none ">
         Testimonials
       </MyButton>
-      <p className="font-medium lg:text-5xl/15 text-2xl lg:w-3xl w-sm pt-8 text-center  lg:ml-0 lg:place-self-center ">
+      <p className="font-bold lg:text-5xl/15 text-2xl lg:w-3xl w-sm pt-8 text-center dark:text-white lg:ml-0 lg:place-self-center ">
         What Our AI-powered notetakers have to say
       </p>
-      <p className="md:text-lg/10 text-md dark:text-[rgba(199,247,248,1)] font-200 md:px-20 py-6 text-center place-self-center md:w-full lg:w-3xl  w-sm px-10  ">
+      <p className="md:text-lg/10 text-sm dark:text-[rgba(199,247,248,1)] font-200 md:px-20 py-6 text-center place-self-center md:w-full lg:w-3xl  w-sm px-15  ">
         NoteFlow has helped 1000's supercharge their productivity with cutting
         edge AI note taking tools
       </p>
-      <div className="flex p-5 flex-wrap justify-center">
-        <div className="block ">
+      <div className="flex p-5 lg:flex-nowrap gap-5 justify-center">
+        <div className="block mx-9 md:mx-0">
           {reviews.slice(0, reviewslength).map((review) => (
             <div
               key={review.id}
-              className="block rounded-xl lg:p-10 p-5 my-5 font-300 lg:w-90 w-60 dark:bg-[#0e2e2e] bg-[#44e5e7]/100 text-white "
+              className="block rounded-xl  lg:p-10 p-5 my-5 font-300 w-[100%] max-w-[24rem] dark:bg-[#0e2e2e] bg-[#44e5e7]/100 text-white "
             >
               <img
                 src={review.rating}
@@ -66,11 +66,11 @@ const Reviews = () => {
             </div>
           ))}
         </div>
-        <div className="md:block hidden  ">
+        <div className="md:block hidden mx-9 md:mx-0">
           {rev3.slice(0, rev3length).map((review) => (
             <div
               key={review.id}
-              className="block  rounded-xl lg:p-10 p-5 m-5  text-lg font-300 lg:w-90 w-60 dark:bg-[#0e2e2e] bg-[#44e5e7]/100 text-white "
+              className="block  rounded-xl lg:p-10 p-5 my-5 text-lg font-300 w-[100%] max-w-[24rem] dark:bg-[#0e2e2e] bg-[#44e5e7]/100 text-white "
             >
               <img
                 src={review.rating}
@@ -96,11 +96,11 @@ const Reviews = () => {
             </div>
           ))}
         </div>
-        <div className="lg:block hidden">
+        <div className="lg:block hidden mx-9 md:mx-0">
           {rev.slice(0, revlength).map((review) => (
             <div
               key={review.id}
-              className="md:block hidden  rounded-xl lg:p-10 p-5 my-5  text-lg font-300 lg:w-90 w-60  dark:bg-[#0e2e2e] bg-[#44e5e7]/100 text-white "
+              className="md:block hidden  rounded-xl lg:p-10 p-5 my-5  text-lg font-300 w-[100%] max-w-[24rem]   dark:bg-[#0e2e2e] bg-[#44e5e7]/100 text-white "
             >
               <img
                 src={review.rating}

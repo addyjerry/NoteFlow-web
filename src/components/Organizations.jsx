@@ -26,12 +26,12 @@ function Organizations() {
           Organizations powered by <b>NoteFlow</b>
         </p>
       </div>
-      <div className="grid lg:grid-cols-4 grid-cols-2 gap-10 lg:gap-x-65">
+      <div className="grid lg:grid-cols-4 grid-cols-2 gap-10 lg:gap-x-10 xl:gap-x-40 lg:w-auto  place-items-center">
         {organizations.map((org) => (
           <img
             src={org}
             alt="org"
-            className="md:w-25 md:h-10 w-20"
+            className="w-50 bg-gradient-to-t from-[#104747] to-[#0E2E2E] p-5"
             key={org.index}
           />
         ))}
