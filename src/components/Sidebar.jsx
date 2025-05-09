@@ -16,7 +16,7 @@ const Sidebar = ({ handleLogin, handleSidebar }) => {
           <li className="py-2">About</li>
           <li className="py-2">Community</li>
         </ul>
-        <div className="block pt-[40vh] px-5">
+        <div className="block md:pt-[40vh] pt-50 px-5">
           <MyButton
             onClick={handleLogin}
             className="w-full  justify-center my-5"
