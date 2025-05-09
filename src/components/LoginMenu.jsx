@@ -6,7 +6,7 @@ const LoginMenu = ({ handleLogin }) => {
   return (
     <div className="left-0 top-0 backdrop-blur flex  p-5 fixed w-full h-[100vh] place-content-center z-20">
       <div className="place-self-center p-10 lg:px-90 flex justify-self-center  ">
-        <div className="dark:bg-[#0e2e1a] bg-gray-300 place-content-center lg:w-xs w-3xs px-10 text-center lg:py-40 hidden md:block ">
+        <div className="dark:bg-[#0e2e1a] bg-gray-300 place-content-center rounded-xl lg:w-xs w-3xs px-10 text-center lg:py-40 hidden md:block ">
           <p className="text-xl font-bold">Lets Get You Signed Up</p>
           <p>No charges, no fees. Get note taking in minutes!</p>
         </div>
